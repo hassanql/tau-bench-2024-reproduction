@@ -172,3 +172,17 @@ Sanitized evidence (no resource endpoint or key): `evidence/azure-catalog-summar
 Requested next evidence: the resource's actual deployment names and underlying versions from Foundry's Deployments / Models + endpoints page. No model substitution or historical code patch has been made. The diagnostic now prints a concise relevant-model summary by default; `--full` prints the full catalog.
 
 References: [Azure endpoints and deployment names](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/endpoints), [Azure model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule).
+
+## Supplied Azure agent deployment (2026-10-05)
+
+User supplied deployment `gpt-4o-2` and the resource's `/openai/v1` base URL. The supplied base URL is appropriate for Azure's OpenAI-compatible v1 API. A bounded chat check from this restricted execution environment again failed DNS resolution before authentication or inference. The earlier user-run metadata check remains proof of valid resource authentication; this failure does not imply an invalid key or deployment.
+
+Added `scripts/check_azure_deployment.py`: one chat probe capped at four output tokens and, only after success, a forced diagnostic function call capped at 64 output tokens. No benchmark task or user simulator runs. The returned `model` and usage are printed and retained locally; no key or endpoint is logged. The script accepts either resource root or `/openai/v1` URL without duplicating the route. The account-specific raw diagnostic is Git-ignored.
+
+Run from the network-enabled terminal after exporting `.env`:
+
+```bash
+.venv-offline/bin/python scripts/check_azure_deployment.py --deployment gpt-4o-2
+```
+
+The actual deployed version is still unknown. GPT-4-0613 customer simulator availability remains unresolved. Do not infer exact numerical reproduction or silently use GPT-4o for both roles.

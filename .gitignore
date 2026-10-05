@@ -12,3 +12,4 @@ dist/
 
 # Account-specific local endpoint probe metadata.
 evidence/azure-access-check.json
+evidence/azure-deployment-check.json
