@@ -1,0 +1,97 @@
+{
+  "kind": "offline gold replay and controlled scorer checks; no LLM or user behavior sampled",
+  "utc": "2026-10-05T07:13:56.818814+00:00",
+  "task_count": 115,
+  "tasks_with_gold_tool_errors": [
+    2,
+    3,
+    4,
+    5,
+    9,
+    12,
+    13,
+    21,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    46,
+    47,
+    54,
+    55,
+    64,
+    67,
+    68,
+    106
+  ],
+  "checks": [
+    {
+      "check": "gold state and required substrings task 0",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 2",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 16",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 22",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 24",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "correct state but missing required words fails",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "incorrect final database fails",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "evaluation records actual pre-replay hash",
+      "actual": "ed204f32209f0ff79834ecf5de4ea924980eee3fb63f09327acadbb83aa91c1c",
+      "expected": "ed204f32209f0ff79834ecf5de4ea924980eee3fb63f09327acadbb83aa91c1c",
+      "passed": true
+    },
+    {
+      "check": "evaluation leaves database at gold hash",
+      "actual": "d43e3b1db78717890d6553fec7990380b0264acf873d056fbe797d91190e7586",
+      "expected": "d43e3b1db78717890d6553fec7990380b0264acf873d056fbe797d91190e7586",
+      "passed": true
+    },
+    {
+      "check": "authentication sequence not independently enforced by reward",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "extra read and unrequired question have no direct reward penalty",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    }
+  ]
+}

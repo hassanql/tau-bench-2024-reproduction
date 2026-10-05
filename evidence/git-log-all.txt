@@ -1,0 +1,93 @@
+59a200c (origin/main, origin/HEAD, main) Merge pull request #80 from sierra-research/update-readme-tau3-bench
+e44ef65 (origin/update-readme-tau3-bench) Update README to point to τ³-bench and warn about outdated tasks
+4754e6b Merge pull request #64 from noiji/patch-1
+a2d3283 handle None response cost
+9ed9fd9 Merge pull request #60 from sierra-research/victorb-sierra-patch-1
+385d1fe Update README.md
+c765667 Merge pull request #59 from dhh1995/main
+6f193ff update README with information about the new tau2
+14bf0ef Merge pull request #27 from brianzq/brianz/airline-get-user-details-fix
+edad7fc provide key detail in airline get_user_details function desc
+d631fa0 Merge pull request #25 from adampauls/u/adpauls/revert-t-shirt
+054ae2f Merge pull request #24 from adampauls/fix-province
+5c90278 Merge pull request #22 from adampauls/main
+64ff9b3 Merge pull request #26 from brianzq/brianz/retail-better-func-desc
+c4b38de provide key detail in retail get_user_details function desc
+4709449 Revert t-shirt change.
+404f33e Remove all references to province
+fc90b45 Make the user ID clear for airline.
+e1a16cd Merge pull request #19 from eaplatanios/u/eaplatanios/retail-fix
+563b3e6 Merge pull request #11 from acrmp/add-platform-to-auto-error-id-cmd
+5e7f938 Merge pull request #21 from abhishekkumawat23/main
+07191f1 Making run.py part of tau_bench package
+3ff5dd3 Merge pull request #17 from GregoireMialon/gm/add_manifest
+7dd6d0d .
+cca6acd [Easy] Fix number of t-shirts in retail tasks.
+77c01fc Merge pull request #15 from eaplatanios/test-task-fixes
+67e6b12 Merge pull request #16 from eaplatanios/metric-change
+ed09ea9 also includes json
+ee8f7a9 added manifest to include wiki.md s
+b581e61 Add note about historical trajectories
+7362a17 Add historical trajectories
+a50b6c1 Add a few shot agent
+718ffa1 The reward should be zero if the database state is incorrect.
+fbc1c58 Fixes for some of the retail test tasks.
+0ed3bd8 Add --platform flag to auto error id command line
+977d520 Add the new claude 3.5 sonnet model to the leaderboard
+1c9cf19 Make compatible with python3.10
+a67141c Add gpt4o retail results
+f8aa574 Add anthropic retail results
+5a50ea5 Add anthropic results
+888a1e8 Update gpt4o results
+4727c2c Remove unused imports
+81e076f Add the ability to run specific tasks by ID
+11e597e Move newline in f string
+f6a3d81 Display auto eval results
+a06cb9c Fix parsing error in react user strategy
+2401b1b Add the user strategy to the log file name
+5027d73 Spelling
+9ae1dea Support alternate user simulators
+ab02192 Add the ability to use different models for the auto error identification step
+5e203de Fix an issue with checking the end of conversation
+442b135 Only perform fault type analysis on failed trajectories caused by the agent
+6d2a1dd Add missing func tools module, followup to c5612832f4e02844c1ca7ab5f97a5366269a8ced
+c561283 Merge pull request #6 from catherinewu/small-fix
+4a54ffb Add note for auto error errors
+c9f19c3 update readme and message formatting
+1d9e0db Relax typing for llm "messages"
+446cc07 Pin litellm version to 1.41.0
+a18cea6 Fix arg name in example command
+9ea0e30 Add litellm as a dependency missing from 043b544371757ebb3762b3d02a6675dfe0c41798
+bdc816d Tweak message
+034a267 Rename
+4478cae Implement auto error identification
+5ac82a0 Add rerun gpt metrics
+fedd157 Fix task index out of range issue
+f2eb7a4 Merge pull request #5 from catherinewu/fix-task-109
+9567602 Update links
+9ce8097 Update readme
+6fd7140 Remove unused code from 043b544371757ebb3762b3d02a6675dfe0c41798
+9f4e717 Update api key labels
+7ac028e function_calling --> function-calling
+6030998 Remove
+043b544 `tau-bench` rewrite
+aba6eab edit: There is an E-Reader in the order that you want to return.
+a6d7002 fix ambiguous task
+da9678c Update README.md
+feae2c9 Update README.md
+d68889c Update README.md
+2a6d51f Fix mistral migration issue and refactor data loading
+b979943 Add the ability to use other user simulator models
+34c217a Update README.md
+8d339ff Add pass^k metric
+c86a760 Merge pull request #4 from dayyyyyyyyyy/main
+2a797d6 Add gpt 4o mini and claude 3.5
+a8f3cf5 Fixed retail task #9, #16, #20, #35
+2fac2db Merge pull request #2 from SeungyounShin/main
+2d5b206 Fix wrong tasks for tau-retail
+2aa8fe3 Merge pull request #1 from SamWarmuth/main
+7897a1f Add trailing space to gitignore file
+8c48def Add .gitignore to prevent build and run artifacts from being committed to codebase
+fa2a75f Update README.md
+bcdeb61 Fix Claude API and add Claude 3.5 option
+6f4b718 (HEAD -> reproduce-tau-2024) Initial commit

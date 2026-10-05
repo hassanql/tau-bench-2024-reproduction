@@ -1,0 +1,1222 @@
+{
+  "kind": "offline gold replay and controlled scorer checks; no LLM or user behavior sampled",
+  "utc": "2026-10-05T07:13:56.818814+00:00",
+  "task_count": 115,
+  "tasks_with_gold_tool_errors": [
+    2,
+    3,
+    4,
+    5,
+    9,
+    12,
+    13,
+    21,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    46,
+    47,
+    54,
+    55,
+    64,
+    67,
+    68,
+    106
+  ],
+  "checks": [
+    {
+      "check": "gold state and required substrings task 0",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 2",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 16",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 22",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "gold state and required substrings task 24",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "correct state but missing required words fails",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "incorrect final database fails",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "evaluation records actual pre-replay hash",
+      "actual": "ed204f32209f0ff79834ecf5de4ea924980eee3fb63f09327acadbb83aa91c1c",
+      "expected": "ed204f32209f0ff79834ecf5de4ea924980eee3fb63f09327acadbb83aa91c1c",
+      "passed": true
+    },
+    {
+      "check": "evaluation leaves database at gold hash",
+      "actual": "d43e3b1db78717890d6553fec7990380b0264acf873d056fbe797d91190e7586",
+      "expected": "d43e3b1db78717890d6553fec7990380b0264acf873d056fbe797d91190e7586",
+      "passed": true
+    },
+    {
+      "check": "authentication sequence not independently enforced by reward",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "check": "extra read and unrequired question have no direct reward penalty",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": 0,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "d43e3b1db78717890d6553fec7990380b0264acf873d056fbe797d91190e7586",
+      "gold_data_hash": "d43e3b1db78717890d6553fec7990380b0264acf873d056fbe797d91190e7586"
+    },
+    {
+      "task_id": 1,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "c430de5735b676dfaba3320f1aeb7085da3764577356f10f0d9f6283e235ef6d",
+      "gold_data_hash": "c430de5735b676dfaba3320f1aeb7085da3764577356f10f0d9f6283e235ef6d"
+    },
+    {
+      "task_id": 2,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "get_product_details",
+            "arguments": {
+              "product_id": "6086499569"
+            }
+          },
+          "observation": "Error: product not found"
+        }
+      ],
+      "pre_scoring_data_hash": "ffb8175ae60305c155ce2210cf0c84b709b0e6ed560723ffd55ec55593b82286",
+      "gold_data_hash": "ffb8175ae60305c155ce2210cf0c84b709b0e6ed560723ffd55ec55593b82286"
+    },
+    {
+      "task_id": 3,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "get_product_details",
+            "arguments": {
+              "product_id": "6086499569"
+            }
+          },
+          "observation": "Error: product not found"
+        }
+      ],
+      "pre_scoring_data_hash": "77f23b4df438f192f55e37d88613fd590e309b9b286173b9812fb952335a91b2",
+      "gold_data_hash": "77f23b4df438f192f55e37d88613fd590e309b9b286173b9812fb952335a91b2"
+    },
+    {
+      "task_id": 4,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "get_product_details",
+            "arguments": {
+              "product_id": "6086499569"
+            }
+          },
+          "observation": "Error: product not found"
+        }
+      ],
+      "pre_scoring_data_hash": "b980760080d3174369af9a389c1f0c1edbbc953aaeea35d9a2e7fd8118432803",
+      "gold_data_hash": "b980760080d3174369af9a389c1f0c1edbbc953aaeea35d9a2e7fd8118432803"
+    },
+    {
+      "task_id": 5,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "return_delivered_order_items",
+            "arguments": {
+              "order_id": "#W6390527",
+              "item_ids": [
+                "8538875209"
+              ],
+              "payment_method_id": "paypal_9497703"
+            }
+          },
+          "observation": "Error: payment method not found"
+        }
+      ],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 6,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "238427fb4e7f45394042eedb4b4e8de8d4333f17ae29e428c2412d3bd79ec140",
+      "gold_data_hash": "238427fb4e7f45394042eedb4b4e8de8d4333f17ae29e428c2412d3bd79ec140"
+    },
+    {
+      "task_id": 7,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "5d5f79b3ddd1923f537a674b37cc711b0470fff533e3d4d9db074d5e8e53928d",
+      "gold_data_hash": "5d5f79b3ddd1923f537a674b37cc711b0470fff533e3d4d9db074d5e8e53928d"
+    },
+    {
+      "task_id": 8,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "55b540339d983f11bb66490e4f6b3f1c87c1bd111a3fcfaacc9764ee005bffa4",
+      "gold_data_hash": "55b540339d983f11bb66490e4f6b3f1c87c1bd111a3fcfaacc9764ee005bffa4"
+    },
+    {
+      "task_id": 9,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "exchange_delivered_order_items",
+            "arguments": {
+              "order_id": "#W6390527",
+              "item_ids": [
+                "8384507844"
+              ],
+              "new_item_ids": [
+                "4385534692"
+              ],
+              "payment_method_id": "paypal_7644869"
+            }
+          },
+          "observation": "Error: new item 4385534692 not found or available"
+        }
+      ],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 10,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 11,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "bed4978e003924029b3d6f82769cf367952cc9dabcc6d88f4181352c40e8e44a",
+      "gold_data_hash": "bed4978e003924029b3d6f82769cf367952cc9dabcc6d88f4181352c40e8e44a"
+    },
+    {
+      "task_id": 12,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "return_delivered_order_items",
+            "arguments": {
+              "order_id": "#W5490111",
+              "item_ids": [
+                "4579334072",
+                "6117189161",
+                "4947717507"
+              ],
+              "payment_method_id": "paypal_9497703"
+            }
+          },
+          "observation": "Error: payment method should be either the original payment method or a gift card"
+        }
+      ],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 13,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "return_delivered_order_items",
+            "arguments": {
+              "order_id": "#W5490111",
+              "item_ids": [
+                "4579334072",
+                "6117189161",
+                "4947717507"
+              ],
+              "payment_method_id": "paypal_9497703"
+            }
+          },
+          "observation": "Error: payment method should be either the original payment method or a gift card"
+        }
+      ],
+      "pre_scoring_data_hash": "ba33dddd0058e21d15bc7b1deac69870ed12a05fc7e9107830358f7416556966",
+      "gold_data_hash": "ba33dddd0058e21d15bc7b1deac69870ed12a05fc7e9107830358f7416556966"
+    },
+    {
+      "task_id": 14,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "9c34499204b020ee6ce4b4644359c45d4d573219335bbc2c58e2c150cd7e2d62",
+      "gold_data_hash": "9c34499204b020ee6ce4b4644359c45d4d573219335bbc2c58e2c150cd7e2d62"
+    },
+    {
+      "task_id": 15,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "fb65c562fd9b0c3ab5f73ea143e83f6fef8ccc1ffddb9c7c657a44e405f4c36e",
+      "gold_data_hash": "fb65c562fd9b0c3ab5f73ea143e83f6fef8ccc1ffddb9c7c657a44e405f4c36e"
+    },
+    {
+      "task_id": 16,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "528bb22bc8544d9c2e00f0f077661556a138eb1e6e2983792122c63dc80c4c52",
+      "gold_data_hash": "528bb22bc8544d9c2e00f0f077661556a138eb1e6e2983792122c63dc80c4c52"
+    },
+    {
+      "task_id": 17,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "74bdcf0077fa42d256eabf9898fd56f670a76623fe5826ef37a463e7d9704a52",
+      "gold_data_hash": "74bdcf0077fa42d256eabf9898fd56f670a76623fe5826ef37a463e7d9704a52"
+    },
+    {
+      "task_id": 18,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "ba81b358a16869d43ea9a907f61712ac068db8a84106c0796cfcfc04f80357e1",
+      "gold_data_hash": "ba81b358a16869d43ea9a907f61712ac068db8a84106c0796cfcfc04f80357e1"
+    },
+    {
+      "task_id": 19,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "6e2508f14d18c831bfc1cbba1cb620f4c892e9e369d1566b7472a17452fcf52b",
+      "gold_data_hash": "6e2508f14d18c831bfc1cbba1cb620f4c892e9e369d1566b7472a17452fcf52b"
+    },
+    {
+      "task_id": 20,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "0cb5283ecdcc74eefedfb076c341786d03e66bbadfbf23eb87bd480679d127a4",
+      "gold_data_hash": "0cb5283ecdcc74eefedfb076c341786d03e66bbadfbf23eb87bd480679d127a4"
+    },
+    {
+      "task_id": 21,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "get_product_details",
+            "arguments": {
+              "product_id": "4107812777"
+            }
+          },
+          "observation": "Error: product not found"
+        },
+        {
+          "action": {
+            "name": "get_product_details",
+            "arguments": {
+              "product_id": "1421289881"
+            }
+          },
+          "observation": "Error: product not found"
+        },
+        {
+          "action": {
+            "name": "get_product_details",
+            "arguments": {
+              "product_id": "4107812777"
+            }
+          },
+          "observation": "Error: product not found"
+        }
+      ],
+      "pre_scoring_data_hash": "6f56a5d42f562ee18aeb52d94be8b402564521603f37fd54f2d2e5f62d722d95",
+      "gold_data_hash": "6f56a5d42f562ee18aeb52d94be8b402564521603f37fd54f2d2e5f62d722d95"
+    },
+    {
+      "task_id": 22,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "5883bd18d246c60aa1256a94b7e8929b19be11791414c840e59663dadb4a9b83",
+      "gold_data_hash": "5883bd18d246c60aa1256a94b7e8929b19be11791414c840e59663dadb4a9b83"
+    },
+    {
+      "task_id": 23,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "59298efe2fee12fdafb715fe160c493b39e6a7316ace5a408b385fbf7ef9a696",
+      "gold_data_hash": "59298efe2fee12fdafb715fe160c493b39e6a7316ace5a408b385fbf7ef9a696"
+    },
+    {
+      "task_id": 24,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 25,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 26,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "11c45e27e3533b9f33176439314364643cbd4f56a07bd3f55f56625ff261030f",
+      "gold_data_hash": "11c45e27e3533b9f33176439314364643cbd4f56a07bd3f55f56625ff261030f"
+    },
+    {
+      "task_id": 27,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "1a77ed2eedd4a6a10365603cf5bccb00e18f09f2a7700b3945d4f547fb1f3351",
+      "gold_data_hash": "1a77ed2eedd4a6a10365603cf5bccb00e18f09f2a7700b3945d4f547fb1f3351"
+    },
+    {
+      "task_id": 28,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "e7e6ee5e25995bff1986339253abf7be4c8f3ada5b90ef39ba590fe41b52c219",
+      "gold_data_hash": "e7e6ee5e25995bff1986339253abf7be4c8f3ada5b90ef39ba590fe41b52c219"
+    },
+    {
+      "task_id": 29,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "3c5a6513acb4a8f525ee4b9796efd4807764ac65ec4802ab98adbb7cf41bd7fd",
+      "gold_data_hash": "3c5a6513acb4a8f525ee4b9796efd4807764ac65ec4802ab98adbb7cf41bd7fd"
+    },
+    {
+      "task_id": 30,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "a7a0a5efdc5ae0dd5f0336c9a2cfe4b7d09b29a530012444db259173c800ee05",
+      "gold_data_hash": "a7a0a5efdc5ae0dd5f0336c9a2cfe4b7d09b29a530012444db259173c800ee05"
+    },
+    {
+      "task_id": 31,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "228a0622969098849487eb24f2a60b51bd1889e50ed5f2337bfb9f5d023b02a3",
+      "gold_data_hash": "228a0622969098849487eb24f2a60b51bd1889e50ed5f2337bfb9f5d023b02a3"
+    },
+    {
+      "task_id": 32,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "147ba3ec8ed458820695202bd33c388ebefc7fdb058ec912e32bba00f27fcd47",
+      "gold_data_hash": "147ba3ec8ed458820695202bd33c388ebefc7fdb058ec912e32bba00f27fcd47"
+    },
+    {
+      "task_id": 33,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "ee7cd818c1ccb475ae01f12934c182195e1ead70e3242d452769f94379322949",
+      "gold_data_hash": "ee7cd818c1ccb475ae01f12934c182195e1ead70e3242d452769f94379322949"
+    },
+    {
+      "task_id": 34,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "modify_pending_order_address",
+            "arguments": {
+              "order_id": "#W1845024",
+              "address1": "224 Elm Street",
+              "address2": "Suite 491",
+              "city": "New York",
+              "country": "USA",
+              "province": "NY",
+              "zip": "10108"
+            }
+          },
+          "observation": "Error: modify_pending_order_address() got an unexpected keyword argument 'province'"
+        }
+      ],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 35,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_email",
+            "arguments": {
+              "email": "aarav.santos8321@example.com"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "b52901b7e2e045c1f0cc72c6544c35336252e6d620800f96a52b19beaafc52b9",
+      "gold_data_hash": "b52901b7e2e045c1f0cc72c6544c35336252e6d620800f96a52b19beaafc52b9"
+    },
+    {
+      "task_id": 36,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_email",
+            "arguments": {
+              "email": "daikisanchez1479@example.com"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "b7b2933d6c3ad1ebb45a00204a82f8c6ef8e254bf4c16d2090d7160f33ee5ab1",
+      "gold_data_hash": "b7b2933d6c3ad1ebb45a00204a82f8c6ef8e254bf4c16d2090d7160f33ee5ab1"
+    },
+    {
+      "task_id": 37,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_email",
+            "arguments": {
+              "email": "daikisanchez1479@example.com"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "b7b2933d6c3ad1ebb45a00204a82f8c6ef8e254bf4c16d2090d7160f33ee5ab1",
+      "gold_data_hash": "b7b2933d6c3ad1ebb45a00204a82f8c6ef8e254bf4c16d2090d7160f33ee5ab1"
+    },
+    {
+      "task_id": 38,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_email",
+            "arguments": {
+              "email": "daikisanchez1479@example.com"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "d5bfe79383744478cb0794cd1634f7ce351d2098fcb0f9d231e9fa9f3980c6a9",
+      "gold_data_hash": "d5bfe79383744478cb0794cd1634f7ce351d2098fcb0f9d231e9fa9f3980c6a9"
+    },
+    {
+      "task_id": 39,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_name_zip",
+            "arguments": {
+              "first_name": "Fatima",
+              "last_name": "Taylor",
+              "zip": "85033"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "f2ffd3f7b7d5e283ffec91a8552c93128cad5d1320a3a42198b1cada70d72d77",
+      "gold_data_hash": "f2ffd3f7b7d5e283ffec91a8552c93128cad5d1320a3a42198b1cada70d72d77"
+    },
+    {
+      "task_id": 40,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "c4fd9e86425aec1409eb76ea5cfb2091640b33b49032ef0d701043d2b25fa41b",
+      "gold_data_hash": "c4fd9e86425aec1409eb76ea5cfb2091640b33b49032ef0d701043d2b25fa41b"
+    },
+    {
+      "task_id": 41,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "8bbf7a1d26cae361a8ab672f0ef3242e9dce0838324cf9b4731789d49fe18284",
+      "gold_data_hash": "8bbf7a1d26cae361a8ab672f0ef3242e9dce0838324cf9b4731789d49fe18284"
+    },
+    {
+      "task_id": 42,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "8bbf7a1d26cae361a8ab672f0ef3242e9dce0838324cf9b4731789d49fe18284",
+      "gold_data_hash": "8bbf7a1d26cae361a8ab672f0ef3242e9dce0838324cf9b4731789d49fe18284"
+    },
+    {
+      "task_id": 43,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "1c280ac07a71469c626d52ee86f34caf16996477601e8cf2fa4063bcaa7a1c0e",
+      "gold_data_hash": "1c280ac07a71469c626d52ee86f34caf16996477601e8cf2fa4063bcaa7a1c0e"
+    },
+    {
+      "task_id": 44,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "3ea5811c3098a8f2826f9863911227ec9697e84b86e4978bd4eab1486d4ed52a",
+      "gold_data_hash": "3ea5811c3098a8f2826f9863911227ec9697e84b86e4978bd4eab1486d4ed52a"
+    },
+    {
+      "task_id": 45,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "43ac28614a723b0713854d8c764bbaa7c42eb26f98a30af06dce26331b99bc74",
+      "gold_data_hash": "43ac28614a723b0713854d8c764bbaa7c42eb26f98a30af06dce26331b99bc74"
+    },
+    {
+      "task_id": 46,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "get_order_details",
+            "arguments": {
+              "order_id": "#9502126"
+            }
+          },
+          "observation": "Error: order not found"
+        },
+        {
+          "action": {
+            "name": "get_order_details",
+            "arguments": {
+              "order_id": "#9502127"
+            }
+          },
+          "observation": "Error: order not found"
+        }
+      ],
+      "pre_scoring_data_hash": "cef38d04d2eecb327c3e68c6fc5801acaf082f9314f1b9b4329c77600a3c1318",
+      "gold_data_hash": "cef38d04d2eecb327c3e68c6fc5801acaf082f9314f1b9b4329c77600a3c1318"
+    },
+    {
+      "task_id": 47,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "get_order_details",
+            "arguments": {
+              "order_id": "#9502126"
+            }
+          },
+          "observation": "Error: order not found"
+        },
+        {
+          "action": {
+            "name": "get_order_details",
+            "arguments": {
+              "order_id": "#9502127"
+            }
+          },
+          "observation": "Error: order not found"
+        }
+      ],
+      "pre_scoring_data_hash": "d21a41b51b2251da98291822dce684eaa5647f334329276284571ecd993cd5d8",
+      "gold_data_hash": "d21a41b51b2251da98291822dce684eaa5647f334329276284571ecd993cd5d8"
+    },
+    {
+      "task_id": 48,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "53f21d97dc75f09b7c911ad1c8bb35d077c62988c61f8a19ea018589fc372f3c",
+      "gold_data_hash": "53f21d97dc75f09b7c911ad1c8bb35d077c62988c61f8a19ea018589fc372f3c"
+    },
+    {
+      "task_id": 49,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "13f737ccad315446362851a7d409a080babdf44ddcc25a222024b9b553f38096",
+      "gold_data_hash": "13f737ccad315446362851a7d409a080babdf44ddcc25a222024b9b553f38096"
+    },
+    {
+      "task_id": 50,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 51,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "b352a3ca366e8eec98e04e6ffd5d076c21ce07f779d09bf7219e83677b01cfc8",
+      "gold_data_hash": "b352a3ca366e8eec98e04e6ffd5d076c21ce07f779d09bf7219e83677b01cfc8"
+    },
+    {
+      "task_id": 52,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "c31fa6afc15e42f743bae5da9a0b0038f8543697fd80c978450dde0a77db6c45",
+      "gold_data_hash": "c31fa6afc15e42f743bae5da9a0b0038f8543697fd80c978450dde0a77db6c45"
+    },
+    {
+      "task_id": 53,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "f00c8d9f4fead713d1854ac53304cc742b3edb8dcb0ab224ba64ed05e4686c0b",
+      "gold_data_hash": "f00c8d9f4fead713d1854ac53304cc742b3edb8dcb0ab224ba64ed05e4686c0b"
+    },
+    {
+      "task_id": 54,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_email",
+            "arguments": {
+              "email": "silva7872@example.com"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "ecf4c7fa384222301a87ff971f9d3916e3c4bb74dea789d92a47c913ff1336d7",
+      "gold_data_hash": "ecf4c7fa384222301a87ff971f9d3916e3c4bb74dea789d92a47c913ff1336d7"
+    },
+    {
+      "task_id": 55,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_email",
+            "arguments": {
+              "email": "silva7872@example.com"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "3a2f3d272fa934cc942ea1e4ad338532e7f6d9cbda4bc17bb6b73112ed0bcb91",
+      "gold_data_hash": "3a2f3d272fa934cc942ea1e4ad338532e7f6d9cbda4bc17bb6b73112ed0bcb91"
+    },
+    {
+      "task_id": 56,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "338c6c6e7d6a5f4dd554470185adcc119f691247dd1922481ddded9891548d29",
+      "gold_data_hash": "338c6c6e7d6a5f4dd554470185adcc119f691247dd1922481ddded9891548d29"
+    },
+    {
+      "task_id": 57,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 58,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "0fa58f657aedb60e1d4895cdd63d40fd6edb6081d77a21ecb8768504987986b8",
+      "gold_data_hash": "0fa58f657aedb60e1d4895cdd63d40fd6edb6081d77a21ecb8768504987986b8"
+    },
+    {
+      "task_id": 59,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "46c527a9040b308eb7c2a5273f4107e555e525aafcec9a69213c172e882bd8f8",
+      "gold_data_hash": "46c527a9040b308eb7c2a5273f4107e555e525aafcec9a69213c172e882bd8f8"
+    },
+    {
+      "task_id": 60,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "396a3be2a544a729963b0bb15b821f705ed00dc88a0b06a04a13385fcde240d3",
+      "gold_data_hash": "396a3be2a544a729963b0bb15b821f705ed00dc88a0b06a04a13385fcde240d3"
+    },
+    {
+      "task_id": 61,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "930a37423e90464b00bebc4e45f5082a42b7fe308f1a570e3bba1a37d45b5b31",
+      "gold_data_hash": "930a37423e90464b00bebc4e45f5082a42b7fe308f1a570e3bba1a37d45b5b31"
+    },
+    {
+      "task_id": 62,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 63,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "47af8d4abb6eb6e30b2dcaceade80f7dc7f6feb75f621b50060c1a70d6a19918",
+      "gold_data_hash": "47af8d4abb6eb6e30b2dcaceade80f7dc7f6feb75f621b50060c1a70d6a19918"
+    },
+    {
+      "task_id": 64,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "exchange_delivered_order_items",
+            "arguments": {
+              "order_id": "#W7464385",
+              "item_ids": [
+                "1810466394"
+              ],
+              "new_item_ids": [
+                "6700049080"
+              ],
+              "payment_method_id": "paypal_1261484"
+            }
+          },
+          "observation": "Error: non-delivered order cannot be exchanged"
+        }
+      ],
+      "pre_scoring_data_hash": "1e18c8940e2fbe8c2f28c54f31af796b848f348fad18cc4ce54b5fd42f657f86",
+      "gold_data_hash": "1e18c8940e2fbe8c2f28c54f31af796b848f348fad18cc4ce54b5fd42f657f86"
+    },
+    {
+      "task_id": 65,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 66,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "c731eb29e78873a0dc0510f8d6df3b4aeec96e89317d8072b76da2c167849206",
+      "gold_data_hash": "c731eb29e78873a0dc0510f8d6df3b4aeec96e89317d8072b76da2c167849206"
+    },
+    {
+      "task_id": 67,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_name_zip",
+            "arguments": {
+              "first_name": "Noah",
+              "last_name": "Ito",
+              "zip": "98178"
+            }
+          },
+          "observation": "Error: user not found"
+        },
+        {
+          "action": {
+            "name": "find_user_id_by_name_zip",
+            "arguments": {
+              "first_name": "Noah",
+              "last_name": "Ito",
+              "zip": "98186"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 68,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "find_user_id_by_name_zip",
+            "arguments": {
+              "first_name": "Noah",
+              "last_name": "Ito",
+              "zip": "98178"
+            }
+          },
+          "observation": "Error: user not found"
+        }
+      ],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 69,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "9689cb35a0aab799865f504dd22614df3c47eb290e55b250e95e9d8dd210025c",
+      "gold_data_hash": "9689cb35a0aab799865f504dd22614df3c47eb290e55b250e95e9d8dd210025c"
+    },
+    {
+      "task_id": 70,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "ab4a5c2d41c13260ad192d0e622daf510c7e989f0976d366db0dc3dcd6a1bcd1",
+      "gold_data_hash": "ab4a5c2d41c13260ad192d0e622daf510c7e989f0976d366db0dc3dcd6a1bcd1"
+    },
+    {
+      "task_id": 71,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "1e94ad9912a90456856093d0d608985a34a2f955b7643ed464a1cacbf3950898",
+      "gold_data_hash": "1e94ad9912a90456856093d0d608985a34a2f955b7643ed464a1cacbf3950898"
+    },
+    {
+      "task_id": 72,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "1e94ad9912a90456856093d0d608985a34a2f955b7643ed464a1cacbf3950898",
+      "gold_data_hash": "1e94ad9912a90456856093d0d608985a34a2f955b7643ed464a1cacbf3950898"
+    },
+    {
+      "task_id": 73,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "5b789811a25e9ded55e4424092942c4a7b4def29a38fcc5b4d8ea228099a3e49",
+      "gold_data_hash": "5b789811a25e9ded55e4424092942c4a7b4def29a38fcc5b4d8ea228099a3e49"
+    },
+    {
+      "task_id": 74,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "c078871bb118fcd0b675ed90844295e2996d28302c657230c817c457f710124e",
+      "gold_data_hash": "c078871bb118fcd0b675ed90844295e2996d28302c657230c817c457f710124e"
+    },
+    {
+      "task_id": 75,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "157be2b753b7c41112ef76cba6fd5e48dac798b8a140e950df51071f6ca99704",
+      "gold_data_hash": "157be2b753b7c41112ef76cba6fd5e48dac798b8a140e950df51071f6ca99704"
+    },
+    {
+      "task_id": 76,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "5debdf4c5549f5faf1d1259ec400a78059730b24ab99bf9feaf6b1fcfb5635a5",
+      "gold_data_hash": "5debdf4c5549f5faf1d1259ec400a78059730b24ab99bf9feaf6b1fcfb5635a5"
+    },
+    {
+      "task_id": 77,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "d1f1b26b3a73cb5bf75cc599a589abd3f253d690ab4455a4eb7da7f5e003ea6f",
+      "gold_data_hash": "d1f1b26b3a73cb5bf75cc599a589abd3f253d690ab4455a4eb7da7f5e003ea6f"
+    },
+    {
+      "task_id": 78,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "81342b1deb4031abedfe826964664dc553fec831bc023f99e62f4084689ae799",
+      "gold_data_hash": "81342b1deb4031abedfe826964664dc553fec831bc023f99e62f4084689ae799"
+    },
+    {
+      "task_id": 79,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "804913b4290dc1e36951b7db9fd89332dd88e0a6e94fd76eca323ebbb84d32b3",
+      "gold_data_hash": "804913b4290dc1e36951b7db9fd89332dd88e0a6e94fd76eca323ebbb84d32b3"
+    },
+    {
+      "task_id": 80,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "80dfccecb4d82f4fc95b77469efecbc9acd54f67f2b8b59e6467d73c31d64fc3",
+      "gold_data_hash": "80dfccecb4d82f4fc95b77469efecbc9acd54f67f2b8b59e6467d73c31d64fc3"
+    },
+    {
+      "task_id": 81,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "9791aa4d983eb1b79d9b6591ae2f0f918da58e8cff7d9a015bad240d8b5c3e71",
+      "gold_data_hash": "9791aa4d983eb1b79d9b6591ae2f0f918da58e8cff7d9a015bad240d8b5c3e71"
+    },
+    {
+      "task_id": 82,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "85cfe8cdb09a583743f8905dac8b137e98c07478c31ca3d25621164cf0f5d4c1",
+      "gold_data_hash": "85cfe8cdb09a583743f8905dac8b137e98c07478c31ca3d25621164cf0f5d4c1"
+    },
+    {
+      "task_id": 83,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "40fc6465c3c3ee4c3e24f4811919104e98de583d9bb300ebc6c965f048196f5c",
+      "gold_data_hash": "40fc6465c3c3ee4c3e24f4811919104e98de583d9bb300ebc6c965f048196f5c"
+    },
+    {
+      "task_id": 84,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "40fc6465c3c3ee4c3e24f4811919104e98de583d9bb300ebc6c965f048196f5c",
+      "gold_data_hash": "40fc6465c3c3ee4c3e24f4811919104e98de583d9bb300ebc6c965f048196f5c"
+    },
+    {
+      "task_id": 85,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "d83e1cfc97960f06470e682bd25d782a4ba85990c3b441d3fe44a4da7b1b4585",
+      "gold_data_hash": "d83e1cfc97960f06470e682bd25d782a4ba85990c3b441d3fe44a4da7b1b4585"
+    },
+    {
+      "task_id": 86,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "8d726c745e5ec4a32bfab80fa68f514dd6ffd3ff8f657220510d2841a6a235ad",
+      "gold_data_hash": "8d726c745e5ec4a32bfab80fa68f514dd6ffd3ff8f657220510d2841a6a235ad"
+    },
+    {
+      "task_id": 87,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "6c8e22fc5d5e3dff0bfd66df7788159eb69d45eaaff68cef2f7198641056901d",
+      "gold_data_hash": "6c8e22fc5d5e3dff0bfd66df7788159eb69d45eaaff68cef2f7198641056901d"
+    },
+    {
+      "task_id": 88,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "66a39fd942611484dea4a14fb6a34ff2649258480f544fdb2cf02155ffc6f811",
+      "gold_data_hash": "66a39fd942611484dea4a14fb6a34ff2649258480f544fdb2cf02155ffc6f811"
+    },
+    {
+      "task_id": 89,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "1f817c257419226af49c7d5106f02e970a58f69227cce8db168357ed16d334b5",
+      "gold_data_hash": "1f817c257419226af49c7d5106f02e970a58f69227cce8db168357ed16d334b5"
+    },
+    {
+      "task_id": 90,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "09306cfad7509d6af9eb9cf27a169ab8b8ef02c7b853438d3df5431114a513ca",
+      "gold_data_hash": "09306cfad7509d6af9eb9cf27a169ab8b8ef02c7b853438d3df5431114a513ca"
+    },
+    {
+      "task_id": 91,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "c3dac643c5df780915ba593171ff631778b2d3cdd24b526a0ec7938a2c386419",
+      "gold_data_hash": "c3dac643c5df780915ba593171ff631778b2d3cdd24b526a0ec7938a2c386419"
+    },
+    {
+      "task_id": 92,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "2a1f7d43809102e4b42ca8a30dad5f4e55b34e362b0a8bc7892c43643781c47c",
+      "gold_data_hash": "2a1f7d43809102e4b42ca8a30dad5f4e55b34e362b0a8bc7892c43643781c47c"
+    },
+    {
+      "task_id": 93,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "7798272eae268b7355ca72373b6f8fff7a9bb6104f826339c15c38b468073d7d",
+      "gold_data_hash": "7798272eae268b7355ca72373b6f8fff7a9bb6104f826339c15c38b468073d7d"
+    },
+    {
+      "task_id": 94,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "d94cc25e151039d8ffab1e358d63d28d891292d724908d1d9568ef2fd1b56f82",
+      "gold_data_hash": "d94cc25e151039d8ffab1e358d63d28d891292d724908d1d9568ef2fd1b56f82"
+    },
+    {
+      "task_id": 95,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "7798272eae268b7355ca72373b6f8fff7a9bb6104f826339c15c38b468073d7d",
+      "gold_data_hash": "7798272eae268b7355ca72373b6f8fff7a9bb6104f826339c15c38b468073d7d"
+    },
+    {
+      "task_id": 96,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "7bf826c6d7ce178f8672cf3b0007bef8ae394d097d3cc2ef40bc40c63d880aa8",
+      "gold_data_hash": "7bf826c6d7ce178f8672cf3b0007bef8ae394d097d3cc2ef40bc40c63d880aa8"
+    },
+    {
+      "task_id": 97,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "fac323e6ea85dd7c0f6033f2944695bcb6bca83eee0eb82507938879dfe07c2c",
+      "gold_data_hash": "fac323e6ea85dd7c0f6033f2944695bcb6bca83eee0eb82507938879dfe07c2c"
+    },
+    {
+      "task_id": 98,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "fac323e6ea85dd7c0f6033f2944695bcb6bca83eee0eb82507938879dfe07c2c",
+      "gold_data_hash": "fac323e6ea85dd7c0f6033f2944695bcb6bca83eee0eb82507938879dfe07c2c"
+    },
+    {
+      "task_id": 99,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "911a4ab2f3f5e23c9bdd464e1c858d5c4e8b202985d97e5b01ed45229908085b",
+      "gold_data_hash": "911a4ab2f3f5e23c9bdd464e1c858d5c4e8b202985d97e5b01ed45229908085b"
+    },
+    {
+      "task_id": 100,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "f0441654ade60810b5e28b2bfd40767e14f9bf6781d5eec912e71e5bb9194191",
+      "gold_data_hash": "f0441654ade60810b5e28b2bfd40767e14f9bf6781d5eec912e71e5bb9194191"
+    },
+    {
+      "task_id": 101,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "42d8719092cd16c78c1e4a83f59b9ed83b6f5d865af6b505a51a17e3d72b42f6",
+      "gold_data_hash": "42d8719092cd16c78c1e4a83f59b9ed83b6f5d865af6b505a51a17e3d72b42f6"
+    },
+    {
+      "task_id": 102,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "a7d1afe41de64cc9983e1e693c780a79016558a3e27466fdf327fd2491d84fc5",
+      "gold_data_hash": "a7d1afe41de64cc9983e1e693c780a79016558a3e27466fdf327fd2491d84fc5"
+    },
+    {
+      "task_id": 103,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "3698315a713371bc96fe5c63021c012d0ea23ffae75ce08b6796abe90911687b",
+      "gold_data_hash": "3698315a713371bc96fe5c63021c012d0ea23ffae75ce08b6796abe90911687b"
+    },
+    {
+      "task_id": 104,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "2ce2c7775c4a25542f751a01d77039165241f993a5ac4a73a83708a92a97a68a",
+      "gold_data_hash": "2ce2c7775c4a25542f751a01d77039165241f993a5ac4a73a83708a92a97a68a"
+    },
+    {
+      "task_id": 105,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "1a5557840fc556bf07abce8cee9ae8ccacc5a402c5c25a89294b9726c5103b8d",
+      "gold_data_hash": "1a5557840fc556bf07abce8cee9ae8ccacc5a402c5c25a89294b9726c5103b8d"
+    },
+    {
+      "task_id": 106,
+      "reward": 1,
+      "gold_tool_errors": [
+        {
+          "action": {
+            "name": "exchange_delivered_order_items",
+            "arguments": {
+              "order_id": "#W4316152",
+              "item_ids": [
+                "7292993796",
+                "7292993796"
+              ],
+              "new_item_ids": [
+                "3761330360",
+                "9647374798"
+              ],
+              "payment_method_id": "gift_card_7245904"
+            }
+          },
+          "observation": "Error: insufficient gift card balance to pay for the price difference"
+        }
+      ],
+      "pre_scoring_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed",
+      "gold_data_hash": "835f402e86a2f9f1b7d82d8cc497c4f3310c7099db8148fa43709e0eaaf816ed"
+    },
+    {
+      "task_id": 107,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "a807405852f758e128aee5885cda135b4f6158146a8805441d0799f8855b533d",
+      "gold_data_hash": "a807405852f758e128aee5885cda135b4f6158146a8805441d0799f8855b533d"
+    },
+    {
+      "task_id": 108,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "2473d89322c5c29e157359cb6f420e0c9c37ef1b393c92e32a6ce76c07967c62",
+      "gold_data_hash": "2473d89322c5c29e157359cb6f420e0c9c37ef1b393c92e32a6ce76c07967c62"
+    },
+    {
+      "task_id": 109,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "103b6305cf3cb6e2855be1f4a16bb4b36abe839a6edfb9118f5f5808a0c4babc",
+      "gold_data_hash": "103b6305cf3cb6e2855be1f4a16bb4b36abe839a6edfb9118f5f5808a0c4babc"
+    },
+    {
+      "task_id": 110,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "59a277e7180e7ad4c8e0473550c44cd9f8fdc01c576d1b9e6b7aee4a3f171ad7",
+      "gold_data_hash": "59a277e7180e7ad4c8e0473550c44cd9f8fdc01c576d1b9e6b7aee4a3f171ad7"
+    },
+    {
+      "task_id": 111,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "d2f64dc03f1ca0faf93744bfc2624928d9311b1b1f7f28616dd8a49e205f3d39",
+      "gold_data_hash": "d2f64dc03f1ca0faf93744bfc2624928d9311b1b1f7f28616dd8a49e205f3d39"
+    },
+    {
+      "task_id": 112,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "eb0589edae42b75ed18eeb725c93d73e6444ac84509997ff5a5dd147dc5ce307",
+      "gold_data_hash": "eb0589edae42b75ed18eeb725c93d73e6444ac84509997ff5a5dd147dc5ce307"
+    },
+    {
+      "task_id": 113,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "8abd4ef6f6251a446c5f6f1e5cee542dad9beb6fb7de2d729b9559da339a103f",
+      "gold_data_hash": "8abd4ef6f6251a446c5f6f1e5cee542dad9beb6fb7de2d729b9559da339a103f"
+    },
+    {
+      "task_id": 114,
+      "reward": 1,
+      "gold_tool_errors": [],
+      "pre_scoring_data_hash": "566776f9cc08998d6e89ee40f362e3e5a99f7fb5051ad6d65a99c7797d6e804d",
+      "gold_data_hash": "566776f9cc08998d6e89ee40f362e3e5a99f7fb5051ad6d65a99c7797d6e804d"
+    }
+  ]
+}

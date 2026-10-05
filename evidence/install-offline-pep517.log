@@ -1,0 +1,14 @@
+WARNING: The directory '/Users/salih/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///Users/salih/Desktop/tau_bench/tau-bench
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: tau_bench
+  Building editable for tau_bench (pyproject.toml): started
+  Building editable for tau_bench (pyproject.toml): finished with status 'done'
+  Created wheel for tau_bench: filename=tau_bench-0.1.0-0.editable-py3-none-any.whl size=4066 sha256=548322b889045f1afc70efa9817c227583e4a3fedaef46192d0a0f86a1d50627
+  Stored in directory: /private/var/folders/gv/7pvxyb2d73d06_ctt1b1qw280000gn/T/pip-ephem-wheel-cache-ks27qhmt/wheels/d3/cd/d8/d99fbbdeb5e29822537720f29d62c63019f15b1ff86dd9daad
+Successfully built tau_bench
+Installing collected packages: tau_bench
+Successfully installed tau_bench-0.1.0

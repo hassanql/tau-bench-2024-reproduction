@@ -1,0 +1,157 @@
+WARNING: The directory '/Users/salih/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///Users/salih/Desktop/tau_bench/tau-bench
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Installing collected packages: tau_bench
+  DEPRECATION: Legacy editable install of tau_bench==0.1.0 from file:///Users/salih/Desktop/tau_bench/tau-bench (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+  Running setup.py develop for tau_bench
+    error: subprocess-exited-with-error
+    
+    × python setup.py develop did not run successfully.
+    │ exit code: 1
+    ╰─> [67 lines of output]
+        running develop
+        /Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/cmd.py:90: DevelopDeprecationWarning: develop command is deprecated.
+        !!
+        
+                ********************************************************************************
+                Please avoid running ``setup.py`` and ``develop``.
+                Instead, use standards-based tools like pip or uv.
+        
+                This deprecation is overdue, please update your project and remove deprecated
+                calls to avoid build errors in the future.
+        
+                See https://github.com/pypa/setuptools/issues/917 for details.
+                ********************************************************************************
+        
+        !!
+          self.initialize_options()
+        WARNING: The directory '/Users/salih/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+        Obtaining file:///Users/salih/Desktop/tau_bench/tau-bench
+          Installing build dependencies: started
+          Installing build dependencies: finished with status 'error'
+          error: subprocess-exited-with-error
+        
+          × pip subprocess to install build dependencies did not run successfully.
+          │ exit code: 1
+          ╰─> [8 lines of output]
+              WARNING: The directory '/Users/salih/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+              WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104d6c7a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+              WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc2e40>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+              WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc2ff0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+              WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc31d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+              WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc33b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+              ERROR: Could not find a version that satisfies the requirement setuptools>=40.8.0 (from versions: none)
+              ERROR: No matching distribution found for setuptools>=40.8.0
+              [end of output]
+        
+          note: This error originates from a subprocess, and is likely not a problem with pip.
+        error: subprocess-exited-with-error
+        
+        × pip subprocess to install build dependencies did not run successfully.
+        │ exit code: 1
+        ╰─> See above for output.
+        
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+        Traceback (most recent call last):
+          File "<string>", line 2, in <module>
+          File "<pip-setuptools-caller>", line 34, in <module>
+          File "/Users/salih/Desktop/tau_bench/tau-bench/setup.py", line 5, in <module>
+            setup(
+          File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/__init__.py", line 115, in setup
+            return distutils.core.setup(**attrs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/core.py", line 186, in setup
+            return run_commands(dist)
+                   ^^^^^^^^^^^^^^^^^^
+          File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+            dist.run_commands()
+          File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+            self.run_command(cmd)
+          File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/dist.py", line 1102, in run_command
+            super().run_command(command)
+          File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+            cmd_obj.run()
+          File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/command/develop.py", line 39, in run
+            subprocess.check_call(cmd)
+          File "/Users/salih/miniforge3/lib/python3.12/subprocess.py", line 413, in check_call
+            raise CalledProcessError(retcode, cmd)
+        subprocess.CalledProcessError: Command '['/Users/salih/Desktop/tau_bench/tau-bench/.venv-offline/bin/python', '-m', 'pip', 'install', '-e', '.', '--use-pep517', '--no-deps']' returned non-zero exit status 1.
+        [end of output]
+    
+    note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× python setup.py develop did not run successfully.
+│ exit code: 1
+╰─> [67 lines of output]
+    running develop
+    /Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/cmd.py:90: DevelopDeprecationWarning: develop command is deprecated.
+    !!
+    
+            ********************************************************************************
+            Please avoid running ``setup.py`` and ``develop``.
+            Instead, use standards-based tools like pip or uv.
+    
+            This deprecation is overdue, please update your project and remove deprecated
+            calls to avoid build errors in the future.
+    
+            See https://github.com/pypa/setuptools/issues/917 for details.
+            ********************************************************************************
+    
+    !!
+      self.initialize_options()
+    WARNING: The directory '/Users/salih/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+    Obtaining file:///Users/salih/Desktop/tau_bench/tau-bench
+      Installing build dependencies: started
+      Installing build dependencies: finished with status 'error'
+      error: subprocess-exited-with-error
+    
+      × pip subprocess to install build dependencies did not run successfully.
+      │ exit code: 1
+      ╰─> [8 lines of output]
+          WARNING: The directory '/Users/salih/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+          WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104d6c7a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+          WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc2e40>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+          WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc2ff0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+          WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc31d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+          WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x104dc33b0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known')': /simple/setuptools/
+          ERROR: Could not find a version that satisfies the requirement setuptools>=40.8.0 (from versions: none)
+          ERROR: No matching distribution found for setuptools>=40.8.0
+          [end of output]
+    
+      note: This error originates from a subprocess, and is likely not a problem with pip.
+    error: subprocess-exited-with-error
+    
+    × pip subprocess to install build dependencies did not run successfully.
+    │ exit code: 1
+    ╰─> See above for output.
+    
+    note: This error originates from a subprocess, and is likely not a problem with pip.
+    Traceback (most recent call last):
+      File "<string>", line 2, in <module>
+      File "<pip-setuptools-caller>", line 34, in <module>
+      File "/Users/salih/Desktop/tau_bench/tau-bench/setup.py", line 5, in <module>
+        setup(
+      File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/__init__.py", line 115, in setup
+        return distutils.core.setup(**attrs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/core.py", line 186, in setup
+        return run_commands(dist)
+               ^^^^^^^^^^^^^^^^^^
+      File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+        dist.run_commands()
+      File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+        self.run_command(cmd)
+      File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/dist.py", line 1102, in run_command
+        super().run_command(command)
+      File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+        cmd_obj.run()
+      File "/Users/salih/miniforge3/lib/python3.12/site-packages/setuptools/command/develop.py", line 39, in run
+        subprocess.check_call(cmd)
+      File "/Users/salih/miniforge3/lib/python3.12/subprocess.py", line 413, in check_call
+        raise CalledProcessError(retcode, cmd)
+    subprocess.CalledProcessError: Command '['/Users/salih/Desktop/tau_bench/tau-bench/.venv-offline/bin/python', '-m', 'pip', 'install', '-e', '.', '--use-pep517', '--no-deps']' returned non-zero exit status 1.
+    [end of output]
+
+note: This error originates from a subprocess, and is likely not a problem with pip.

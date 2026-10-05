@@ -1,0 +1,1711 @@
+[
+  {
+    "task_id": 0,
+    "task": {
+      "annotator": 0,
+      "user_id": "yusuf_rossi_9620",
+      "instruction": "You are Yusuf Rossi in 19122. You received your order #W2378156 and wish to exchange the mechanical keyboard for a similar one but with clicky switches and the smart thermostat for one compatible with Google Home instead of Apple HomeKit. If there is no keyboard that is clicky, RGB backlight, full size, you'd go for no backlight. You are detail-oriented and want to make sure everything is addressed in one go.",
+      "actions": [
+        {
+          "name": "find_user_id_by_name_zip",
+          "arguments": {
+            "first_name": "Yusuf",
+            "last_name": "Rossi",
+            "zip": "19122"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W2378156"
+          }
+        },
+        {
+          "name": "get_product_details",
+          "arguments": {
+            "product_id": "1656367028"
+          }
+        },
+        {
+          "name": "get_product_details",
+          "arguments": {
+            "product_id": "4896585277"
+          }
+        },
+        {
+          "name": "exchange_delivered_order_items",
+          "arguments": {
+            "order_id": "#W2378156",
+            "item_ids": [
+              "1151293680",
+              "4983901480"
+            ],
+            "new_item_ids": [
+              "7706410293",
+              "7747408585"
+            ],
+            "payment_method_id": "credit_card_9513926"
+          }
+        }
+      ]
+    },
+    "starting_user": {
+      "name": {
+        "first_name": "Yusuf",
+        "last_name": "Rossi"
+      },
+      "address": {
+        "address1": "763 Broadway",
+        "address2": "Suite 135",
+        "city": "Philadelphia",
+        "country": "USA",
+        "province": "PA",
+        "zip": "19122"
+      },
+      "email": "yusuf.rossi7301@example.com",
+      "payment_methods": {
+        "credit_card_9513926": {
+          "source": "credit_card",
+          "brand": "mastercard",
+          "last_four": "2478",
+          "id": "credit_card_9513926"
+        }
+      },
+      "orders": [
+        "#W6247578",
+        "#W9711842",
+        "#W4776164",
+        "#W6679257",
+        "#W2378156"
+      ]
+    },
+    "starting_orders": {
+      "#W6247578": {
+        "order_id": "#W6247578",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "3799046073",
+            "price": 53.27,
+            "options": {
+              "color": "black",
+              "size": "XXL",
+              "material": "cotton",
+              "style": "crew neck"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 53.27,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W9711842": {
+        "order_id": "#W9711842",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "Sunglasses",
+            "product_id": "7314138884",
+            "item_id": "4245201809",
+            "price": 281.48,
+            "options": {
+              "frame color": "black",
+              "lens color": "green",
+              "lens type": "non-polarized",
+              "frame material": "metal"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "540934230326"
+            ],
+            "item_ids": [
+              "4245201809"
+            ]
+          }
+        ],
+        "status": "cancelled",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 281.48,
+            "payment_method_id": "credit_card_9513926"
+          },
+          {
+            "transaction_type": "refund",
+            "amount": 281.48,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W4776164": {
+        "order_id": "#W4776164",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "8349118980",
+            "price": 53.43,
+            "options": {
+              "color": "blue",
+              "size": "S",
+              "material": "cotton",
+              "style": "v-neck"
+            }
+          },
+          {
+            "name": "Espresso Machine",
+            "product_id": "4354588079",
+            "item_id": "6324294385",
+            "price": 2719.01,
+            "options": {
+              "pressure": "9 bar",
+              "capacity": "1L",
+              "type": "automatic"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 2772.44,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W6679257": {
+        "order_id": "#W6679257",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "Digital Camera",
+            "product_id": "8940227892",
+            "item_id": "5996159312",
+            "price": 2895.55,
+            "options": {
+              "resolution": "24MP",
+              "zoom": "3x",
+              "storage": "SD card"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "522129247270"
+            ],
+            "item_ids": [
+              "5996159312"
+            ]
+          }
+        ],
+        "status": "delivered",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 2895.55,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W2378156": {
+        "order_id": "#W2378156",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "Headphones",
+            "product_id": "6992792935",
+            "item_id": "4202497723",
+            "price": 342.81,
+            "options": {
+              "type": "over-ear",
+              "connectivity": "wireless",
+              "color": "blue"
+            }
+          },
+          {
+            "name": "Vacuum Cleaner",
+            "product_id": "1762337868",
+            "item_id": "4602305039",
+            "price": 561.05,
+            "options": {
+              "type": "robotic",
+              "bagged/bagless": "bagged",
+              "features": "cordless"
+            }
+          },
+          {
+            "name": "Mechanical Keyboard",
+            "product_id": "1656367028",
+            "item_id": "1151293680",
+            "price": 272.33,
+            "options": {
+              "switch type": "linear",
+              "backlight": "RGB",
+              "size": "full size"
+            }
+          },
+          {
+            "name": "Smart Thermostat",
+            "product_id": "4896585277",
+            "item_id": "4983901480",
+            "price": 262.47,
+            "options": {
+              "compatibility": "Apple HomeKit",
+              "color": "black"
+            }
+          },
+          {
+            "name": "Smart Watch",
+            "product_id": "6945232052",
+            "item_id": "9408160950",
+            "price": 381.26,
+            "options": {
+              "color": "gold",
+              "band material": "leather",
+              "display": "LCD"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "843053632392"
+            ],
+            "item_ids": [
+              "4202497723",
+              "4602305039",
+              "1151293680",
+              "4983901480",
+              "9408160950"
+            ]
+          }
+        ],
+        "status": "delivered",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 1819.92,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      }
+    },
+    "note": "Static source extraction; this is not an agent run or trajectory. All tasks start from the full shared database."
+  },
+  {
+    "task_id": 2,
+    "task": {
+      "annotator": 0,
+      "user_id": "yusuf_rossi_9620",
+      "instruction": "You are Yusuf Rossi in 19122. You want to know how many tshirt options are available in the online store right now. You want to also return the cleaner, headphone, and smart watch.",
+      "actions": [
+        {
+          "name": "find_user_id_by_name_zip",
+          "arguments": {
+            "first_name": "Yusuf",
+            "last_name": "Rossi",
+            "zip": "19122"
+          }
+        },
+        {
+          "name": "get_product_details",
+          "arguments": {
+            "product_id": "6086499569"
+          }
+        },
+        {
+          "name": "list_all_product_types",
+          "arguments": {}
+        },
+        {
+          "name": "get_product_details",
+          "arguments": {
+            "product_id": "9523456873"
+          }
+        },
+        {
+          "name": "get_user_details",
+          "arguments": {
+            "user_id": "yusuf_rossi_9620"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W6247578"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W9711842"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W4776164"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W6679257"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W2378156"
+          }
+        },
+        {
+          "name": "get_product_details",
+          "arguments": {
+            "product_id": "9523456873"
+          }
+        },
+        {
+          "name": "return_delivered_order_items",
+          "arguments": {
+            "order_id": "#W2378156",
+            "item_ids": [
+              "4602305039",
+              "4202497723",
+              "9408160950"
+            ],
+            "payment_method_id": "credit_card_9513926"
+          }
+        }
+      ],
+      "outputs": [
+        "10"
+      ]
+    },
+    "starting_user": {
+      "name": {
+        "first_name": "Yusuf",
+        "last_name": "Rossi"
+      },
+      "address": {
+        "address1": "763 Broadway",
+        "address2": "Suite 135",
+        "city": "Philadelphia",
+        "country": "USA",
+        "province": "PA",
+        "zip": "19122"
+      },
+      "email": "yusuf.rossi7301@example.com",
+      "payment_methods": {
+        "credit_card_9513926": {
+          "source": "credit_card",
+          "brand": "mastercard",
+          "last_four": "2478",
+          "id": "credit_card_9513926"
+        }
+      },
+      "orders": [
+        "#W6247578",
+        "#W9711842",
+        "#W4776164",
+        "#W6679257",
+        "#W2378156"
+      ]
+    },
+    "starting_orders": {
+      "#W6247578": {
+        "order_id": "#W6247578",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "3799046073",
+            "price": 53.27,
+            "options": {
+              "color": "black",
+              "size": "XXL",
+              "material": "cotton",
+              "style": "crew neck"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 53.27,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W9711842": {
+        "order_id": "#W9711842",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "Sunglasses",
+            "product_id": "7314138884",
+            "item_id": "4245201809",
+            "price": 281.48,
+            "options": {
+              "frame color": "black",
+              "lens color": "green",
+              "lens type": "non-polarized",
+              "frame material": "metal"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "540934230326"
+            ],
+            "item_ids": [
+              "4245201809"
+            ]
+          }
+        ],
+        "status": "cancelled",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 281.48,
+            "payment_method_id": "credit_card_9513926"
+          },
+          {
+            "transaction_type": "refund",
+            "amount": 281.48,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W4776164": {
+        "order_id": "#W4776164",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "8349118980",
+            "price": 53.43,
+            "options": {
+              "color": "blue",
+              "size": "S",
+              "material": "cotton",
+              "style": "v-neck"
+            }
+          },
+          {
+            "name": "Espresso Machine",
+            "product_id": "4354588079",
+            "item_id": "6324294385",
+            "price": 2719.01,
+            "options": {
+              "pressure": "9 bar",
+              "capacity": "1L",
+              "type": "automatic"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 2772.44,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W6679257": {
+        "order_id": "#W6679257",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "Digital Camera",
+            "product_id": "8940227892",
+            "item_id": "5996159312",
+            "price": 2895.55,
+            "options": {
+              "resolution": "24MP",
+              "zoom": "3x",
+              "storage": "SD card"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "522129247270"
+            ],
+            "item_ids": [
+              "5996159312"
+            ]
+          }
+        ],
+        "status": "delivered",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 2895.55,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      },
+      "#W2378156": {
+        "order_id": "#W2378156",
+        "user_id": "yusuf_rossi_9620",
+        "address": {
+          "address1": "763 Broadway",
+          "address2": "Suite 135",
+          "city": "Philadelphia",
+          "country": "USA",
+          "state": "PA",
+          "zip": "19122"
+        },
+        "items": [
+          {
+            "name": "Headphones",
+            "product_id": "6992792935",
+            "item_id": "4202497723",
+            "price": 342.81,
+            "options": {
+              "type": "over-ear",
+              "connectivity": "wireless",
+              "color": "blue"
+            }
+          },
+          {
+            "name": "Vacuum Cleaner",
+            "product_id": "1762337868",
+            "item_id": "4602305039",
+            "price": 561.05,
+            "options": {
+              "type": "robotic",
+              "bagged/bagless": "bagged",
+              "features": "cordless"
+            }
+          },
+          {
+            "name": "Mechanical Keyboard",
+            "product_id": "1656367028",
+            "item_id": "1151293680",
+            "price": 272.33,
+            "options": {
+              "switch type": "linear",
+              "backlight": "RGB",
+              "size": "full size"
+            }
+          },
+          {
+            "name": "Smart Thermostat",
+            "product_id": "4896585277",
+            "item_id": "4983901480",
+            "price": 262.47,
+            "options": {
+              "compatibility": "Apple HomeKit",
+              "color": "black"
+            }
+          },
+          {
+            "name": "Smart Watch",
+            "product_id": "6945232052",
+            "item_id": "9408160950",
+            "price": 381.26,
+            "options": {
+              "color": "gold",
+              "band material": "leather",
+              "display": "LCD"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "843053632392"
+            ],
+            "item_ids": [
+              "4202497723",
+              "4602305039",
+              "1151293680",
+              "4983901480",
+              "9408160950"
+            ]
+          }
+        ],
+        "status": "delivered",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 1819.92,
+            "payment_method_id": "credit_card_9513926"
+          }
+        ]
+      }
+    },
+    "note": "Static source extraction; this is not an agent run or trajectory. All tasks start from the full shared database."
+  },
+  {
+    "task_id": 16,
+    "task": {
+      "annotator": 0,
+      "user_id": "fatima_johnson_7581",
+      "instruction": "You are Fatima Johnson in 78712. You want to cancel all pending orders and return the watch you have received (but nothing else), and you want to know the total amount you can get back. You are a private person that does not want to reveal much about yourself.",
+      "actions": [
+        {
+          "name": "find_user_id_by_name_zip",
+          "arguments": {
+            "first_name": "Fatima",
+            "last_name": "Johnson",
+            "zip": "78712"
+          }
+        },
+        {
+          "name": "get_user_details",
+          "arguments": {
+            "user_id": "fatima_johnson_7581"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W5199551"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W8665881"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W9389413"
+          }
+        },
+        {
+          "name": "calculate",
+          "arguments": {
+            "expression": "3131.1 + 4777.75 + 367.38"
+          }
+        },
+        {
+          "name": "cancel_pending_order",
+          "arguments": {
+            "order_id": "#W5199551",
+            "reason": "no longer needed"
+          }
+        },
+        {
+          "name": "cancel_pending_order",
+          "arguments": {
+            "order_id": "#W8665881",
+            "reason": "no longer needed"
+          }
+        },
+        {
+          "name": "return_delivered_order_items",
+          "arguments": {
+            "order_id": "#W9389413",
+            "item_ids": [
+              "2554056026"
+            ],
+            "payment_method_id": "paypal_5364164"
+          }
+        }
+      ],
+      "outputs": [
+        "8276.23"
+      ]
+    },
+    "starting_user": {
+      "name": {
+        "first_name": "Fatima",
+        "last_name": "Johnson"
+      },
+      "address": {
+        "address1": "123 Elm Street",
+        "address2": "Suite 640",
+        "city": "Austin",
+        "country": "USA",
+        "province": "TX",
+        "zip": "78712"
+      },
+      "email": "fatima.johnson2300@example.com",
+      "payment_methods": {
+        "paypal_5364164": {
+          "source": "paypal",
+          "id": "paypal_5364164"
+        },
+        "gift_card_1675628": {
+          "source": "gift_card",
+          "balance": 99,
+          "id": "gift_card_1675628"
+        }
+      },
+      "orders": [
+        "#W5199551",
+        "#W8665881",
+        "#W9389413"
+      ]
+    },
+    "starting_orders": {
+      "#W5199551": {
+        "order_id": "#W5199551",
+        "user_id": "fatima_johnson_7581",
+        "address": {
+          "address1": "123 Elm Street",
+          "address2": "Suite 640",
+          "city": "Austin",
+          "country": "USA",
+          "state": "TX",
+          "zip": "78712"
+        },
+        "items": [
+          {
+            "name": "Hiking Boots",
+            "product_id": "7363354090",
+            "item_id": "1615379700",
+            "price": 253.89,
+            "options": {
+              "size": "10",
+              "material": "synthetic",
+              "waterproof": "yes"
+            }
+          },
+          {
+            "name": "Action Camera",
+            "product_id": "3377618313",
+            "item_id": "5925362855",
+            "price": 503.51,
+            "options": {
+              "resolution": "1080p",
+              "waterproof": "yes",
+              "color": "black"
+            }
+          },
+          {
+            "name": "Electric Kettle",
+            "product_id": "1075968781",
+            "item_id": "9472539378",
+            "price": 143.72,
+            "options": {
+              "capacity": "1.5L",
+              "material": "glass",
+              "color": "white"
+            }
+          },
+          {
+            "name": "Cycling Helmet",
+            "product_id": "7765186836",
+            "item_id": "5537798301",
+            "price": 204.47,
+            "options": {
+              "size": "S",
+              "color": "black",
+              "ventilation": "medium"
+            }
+          },
+          {
+            "name": "Wristwatch",
+            "product_id": "6066914160",
+            "item_id": "1994478369",
+            "price": 2025.51,
+            "options": {
+              "strap material": "silicone",
+              "dial color": "black"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 3131.1,
+            "payment_method_id": "paypal_5364164"
+          }
+        ]
+      },
+      "#W8665881": {
+        "order_id": "#W8665881",
+        "user_id": "fatima_johnson_7581",
+        "address": {
+          "address1": "123 Elm Street",
+          "address2": "Suite 640",
+          "city": "Austin",
+          "country": "USA",
+          "state": "TX",
+          "zip": "78712"
+        },
+        "items": [
+          {
+            "name": "Bluetooth Speaker",
+            "product_id": "4768869376",
+            "item_id": "5855700373",
+            "price": 293.46,
+            "options": {
+              "color": "black",
+              "battery life": "10 hours",
+              "water resistance": "yes"
+            }
+          },
+          {
+            "name": "Smart Watch",
+            "product_id": "6945232052",
+            "item_id": "9408160950",
+            "price": 381.26,
+            "options": {
+              "color": "gold",
+              "band material": "leather",
+              "display": "LCD"
+            }
+          },
+          {
+            "name": "Dumbbell Set",
+            "product_id": "7233192239",
+            "item_id": "4422467033",
+            "price": 483.47,
+            "options": {
+              "weight range": "30-50 lbs",
+              "material": "urethane",
+              "set type": "adjustable"
+            }
+          },
+          {
+            "name": "Espresso Machine",
+            "product_id": "4354588079",
+            "item_id": "1157853815",
+            "price": 3096.7,
+            "options": {
+              "pressure": "19 bar",
+              "capacity": "2L",
+              "type": "capsule"
+            }
+          },
+          {
+            "name": "Action Camera",
+            "product_id": "3377618313",
+            "item_id": "8725040869",
+            "price": 522.86,
+            "options": {
+              "resolution": "4K",
+              "waterproof": "no",
+              "color": "black"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 4777.75,
+            "payment_method_id": "paypal_5364164"
+          }
+        ]
+      },
+      "#W9389413": {
+        "order_id": "#W9389413",
+        "user_id": "fatima_johnson_7581",
+        "address": {
+          "address1": "123 Elm Street",
+          "address2": "Suite 640",
+          "city": "Austin",
+          "country": "USA",
+          "state": "TX",
+          "zip": "78712"
+        },
+        "items": [
+          {
+            "name": "Hiking Boots",
+            "product_id": "7363354090",
+            "item_id": "4127323219",
+            "price": 251.82,
+            "options": {
+              "size": "10",
+              "material": "synthetic",
+              "waterproof": "no"
+            }
+          },
+          {
+            "name": "Smart Watch",
+            "product_id": "6945232052",
+            "item_id": "2554056026",
+            "price": 367.38,
+            "options": {
+              "color": "gold",
+              "band material": "metal",
+              "display": "AMOLED"
+            }
+          },
+          {
+            "name": "Mechanical Keyboard",
+            "product_id": "1656367028",
+            "item_id": "6342039236",
+            "price": 244.91,
+            "options": {
+              "switch type": "clicky",
+              "backlight": "white",
+              "size": "full size"
+            }
+          },
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "5047954489",
+            "price": 54.84,
+            "options": {
+              "color": "blue",
+              "size": "S",
+              "material": "polyester",
+              "style": "v-neck"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "967556659983"
+            ],
+            "item_ids": [
+              "4127323219",
+              "2554056026",
+              "6342039236",
+              "5047954489"
+            ]
+          }
+        ],
+        "status": "delivered",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 918.95,
+            "payment_method_id": "paypal_5364164"
+          }
+        ]
+      }
+    },
+    "note": "Static source extraction; this is not an agent run or trajectory. All tasks start from the full shared database."
+  },
+  {
+    "task_id": 22,
+    "task": {
+      "annotator": 0,
+      "user_id": "ethan_garcia_1261",
+      "instruction": "You are Ethan Garcia, and you live in Denver, 80280. You want to change your user address and all possible order addresses to be 101 Highway, New York, 10001. Then you regret and want to change the user address back to the original address. You are a mysterious person and do not want to reveal much about yourself.",
+      "actions": [
+        {
+          "name": "find_user_id_by_name_zip",
+          "arguments": {
+            "first_name": "Ethan",
+            "last_name": "Garcia",
+            "zip": "80280"
+          }
+        },
+        {
+          "name": "modify_user_address",
+          "arguments": {
+            "user_id": "ethan_garcia_1261",
+            "address1": "101 Highway",
+            "address2": "",
+            "city": "New York",
+            "state": "NY",
+            "country": "USA",
+            "zip": "10001"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W4967593"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W9911714"
+          }
+        },
+        {
+          "name": "get_order_details",
+          "arguments": {
+            "order_id": "#W5733668"
+          }
+        },
+        {
+          "name": "modify_pending_order_address",
+          "arguments": {
+            "order_id": "#W9911714",
+            "address1": "101 Highway",
+            "address2": "",
+            "city": "New York",
+            "state": "NY",
+            "country": "USA",
+            "zip": "10001"
+          }
+        },
+        {
+          "name": "modify_user_address",
+          "arguments": {
+            "user_id": "ethan_garcia_1261",
+            "address1": "667 Highland Drive",
+            "address2": "Suite 865",
+            "city": "Denver",
+            "state": "CO",
+            "country": "USA",
+            "zip": "80280"
+          }
+        }
+      ]
+    },
+    "starting_user": {
+      "name": {
+        "first_name": "Ethan",
+        "last_name": "Garcia"
+      },
+      "address": {
+        "address1": "667 Highland Drive",
+        "address2": "Suite 865",
+        "city": "Denver",
+        "country": "USA",
+        "province": "CO",
+        "zip": "80280"
+      },
+      "email": "ethan.garcia8085@example.com",
+      "payment_methods": {
+        "paypal_3798357": {
+          "source": "paypal",
+          "id": "paypal_3798357"
+        },
+        "gift_card_4332117": {
+          "source": "gift_card",
+          "balance": 86,
+          "id": "gift_card_4332117"
+        }
+      },
+      "orders": [
+        "#W4967593",
+        "#W9911714",
+        "#W5733668"
+      ]
+    },
+    "starting_orders": {
+      "#W4967593": {
+        "order_id": "#W4967593",
+        "user_id": "ethan_garcia_1261",
+        "address": {
+          "address1": "667 Highland Drive",
+          "address2": "Suite 865",
+          "city": "Denver",
+          "country": "USA",
+          "state": "CO",
+          "zip": "80280"
+        },
+        "items": [
+          {
+            "name": "Office Chair",
+            "product_id": "4794339885",
+            "item_id": "4168944673",
+            "price": 471.82,
+            "options": {
+              "material": "leather",
+              "color": "blue",
+              "armrest": "none",
+              "backrest height": "standard"
+            }
+          },
+          {
+            "name": "Electric Toothbrush",
+            "product_id": "7352963235",
+            "item_id": "3320557165",
+            "price": 188.67,
+            "options": {
+              "color": "blue",
+              "speed settings": "high",
+              "battery type": "AA batteries"
+            }
+          },
+          {
+            "name": "Backpack",
+            "product_id": "2524789262",
+            "item_id": "8054888773",
+            "price": 206.03,
+            "options": {
+              "color": "grey",
+              "size": "small",
+              "material": "nylon",
+              "compartment": "laptop"
+            }
+          },
+          {
+            "name": "Wristwatch",
+            "product_id": "6066914160",
+            "item_id": "1355937109",
+            "price": 1985.3,
+            "options": {
+              "strap material": "leather",
+              "dial color": "white"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "663395959263"
+            ],
+            "item_ids": [
+              "4168944673",
+              "3320557165",
+              "8054888773",
+              "1355937109"
+            ]
+          }
+        ],
+        "status": "processed",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 2851.82,
+            "payment_method_id": "gift_card_4332117"
+          }
+        ]
+      },
+      "#W9911714": {
+        "order_id": "#W9911714",
+        "user_id": "ethan_garcia_1261",
+        "address": {
+          "address1": "667 Highland Drive",
+          "address2": "Suite 865",
+          "city": "Denver",
+          "country": "USA",
+          "state": "CO",
+          "zip": "80280"
+        },
+        "items": [
+          {
+            "name": "Water Bottle",
+            "product_id": "8310926033",
+            "item_id": "2366567022",
+            "price": 54.04,
+            "options": {
+              "capacity": "1000ml",
+              "material": "stainless steel",
+              "color": "blue"
+            }
+          },
+          {
+            "name": "Mechanical Keyboard",
+            "product_id": "1656367028",
+            "item_id": "1340995114",
+            "price": 235.13,
+            "options": {
+              "switch type": "tactile",
+              "backlight": "none",
+              "size": "full size"
+            }
+          },
+          {
+            "name": "Running Shoes",
+            "product_id": "6938111410",
+            "item_id": "9791469541",
+            "price": 147.05,
+            "options": {
+              "size": "9",
+              "color": "yellow",
+              "material": "synthetic",
+              "sole": "rubber"
+            }
+          },
+          {
+            "name": "Makeup Kit",
+            "product_id": "5149340237",
+            "item_id": "1763705424",
+            "price": 235.44,
+            "options": {
+              "skin tone": "dark",
+              "kit size": "professional",
+              "brand": "Brand C"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 671.66,
+            "payment_method_id": "paypal_3798357"
+          }
+        ]
+      },
+      "#W5733668": {
+        "order_id": "#W5733668",
+        "user_id": "ethan_garcia_1261",
+        "address": {
+          "address1": "667 Highland Drive",
+          "address2": "Suite 865",
+          "city": "Denver",
+          "country": "USA",
+          "state": "CO",
+          "zip": "80280"
+        },
+        "items": [
+          {
+            "name": "Office Chair",
+            "product_id": "4794339885",
+            "item_id": "8323284863",
+            "price": 511.24,
+            "options": {
+              "material": "fabric",
+              "color": "blue",
+              "armrest": "adjustable",
+              "backrest height": "standard"
+            }
+          },
+          {
+            "name": "Portable Charger",
+            "product_id": "6942297802",
+            "item_id": "7866854614",
+            "price": 105.49,
+            "options": {
+              "capacity": "5000mAh",
+              "output": "USB-C",
+              "color": "white"
+            }
+          },
+          {
+            "name": "Electric Kettle",
+            "product_id": "1075968781",
+            "item_id": "4064702754",
+            "price": 159.78,
+            "options": {
+              "capacity": "2L",
+              "material": "glass",
+              "color": "white"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "365054630723"
+            ],
+            "item_ids": [
+              "8323284863",
+              "7866854614",
+              "4064702754"
+            ]
+          }
+        ],
+        "status": "processed",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 776.51,
+            "payment_method_id": "paypal_3798357"
+          }
+        ]
+      }
+    },
+    "note": "Static source extraction; this is not an agent run or trajectory. All tasks start from the full shared database."
+  },
+  {
+    "task_id": 24,
+    "task": {
+      "annotator": 0,
+      "user_id": "sofia_hernandez_5364",
+      "instruction": "You are Sofia Hernandez, and you live in Seattle, WA, 98193. You want to cancel the grill, but if the agent asks you to confirm, you regret and want to keep it. You then want to ask which two t-shirts you have ordered in another order, and what materials are they. Make everything sound very natural and make up reasons.",
+      "actions": [],
+      "outputs": [
+        "polyester",
+        "cotton"
+      ]
+    },
+    "starting_user": {
+      "name": {
+        "first_name": "Sofia",
+        "last_name": "Hernandez"
+      },
+      "address": {
+        "address1": "652 Laurel Lane",
+        "address2": "Suite 398",
+        "city": "Seattle",
+        "country": "USA",
+        "province": "WA",
+        "zip": "98193"
+      },
+      "email": "sofia.hernandez3039@example.com",
+      "payment_methods": {
+        "credit_card_7901829": {
+          "source": "credit_card",
+          "brand": "visa",
+          "last_four": "7312",
+          "id": "credit_card_7901829"
+        }
+      },
+      "orders": [
+        "#W3561391",
+        "#W6876713",
+        "#W9609649",
+        "#W3947049"
+      ]
+    },
+    "starting_orders": {
+      "#W3561391": {
+        "order_id": "#W3561391",
+        "user_id": "sofia_hernandez_5364",
+        "address": {
+          "address1": "652 Laurel Lane",
+          "address2": "Suite 398",
+          "city": "Seattle",
+          "country": "USA",
+          "state": "WA",
+          "zip": "98193"
+        },
+        "items": [
+          {
+            "name": "Grill",
+            "product_id": "6819683148",
+            "item_id": "5946177616",
+            "price": 1057.24,
+            "options": {
+              "type": "gas",
+              "size": "portable",
+              "features": "none"
+            }
+          }
+        ],
+        "fulfillments": [],
+        "status": "pending",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 1057.24,
+            "payment_method_id": "credit_card_7901829"
+          }
+        ]
+      },
+      "#W6876713": {
+        "order_id": "#W6876713",
+        "user_id": "sofia_hernandez_5364",
+        "address": {
+          "address1": "652 Laurel Lane",
+          "address2": "Suite 398",
+          "city": "Seattle",
+          "country": "USA",
+          "state": "WA",
+          "zip": "98193"
+        },
+        "items": [
+          {
+            "name": "Espresso Machine",
+            "product_id": "4354588079",
+            "item_id": "6200867091",
+            "price": 2955.17,
+            "options": {
+              "pressure": "19 bar",
+              "capacity": "1L",
+              "type": "capsule"
+            }
+          },
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "3234800602",
+            "price": 46.66,
+            "options": {
+              "color": "red",
+              "size": "L",
+              "material": "cotton",
+              "style": "v-neck"
+            }
+          },
+          {
+            "name": "Vacuum Cleaner",
+            "product_id": "1762337868",
+            "item_id": "1345513440",
+            "price": 655.59,
+            "options": {
+              "type": "canister",
+              "bagged/bagless": "bagged",
+              "features": "cordless"
+            }
+          },
+          {
+            "name": "Luggage Set",
+            "product_id": "5426915165",
+            "item_id": "6301799585",
+            "price": 495.87,
+            "options": {
+              "piece count": "3-piece",
+              "color": "blue",
+              "material": "softshell"
+            }
+          },
+          {
+            "name": "Grill",
+            "product_id": "6819683148",
+            "item_id": "7082455361",
+            "price": 962.69,
+            "options": {
+              "type": "charcoal",
+              "size": "medium",
+              "features": "rotisserie"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "970329203674"
+            ],
+            "item_ids": [
+              "6200867091",
+              "3234800602",
+              "1345513440",
+              "6301799585",
+              "7082455361"
+            ]
+          }
+        ],
+        "status": "delivered",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 5115.98,
+            "payment_method_id": "credit_card_7901829"
+          }
+        ]
+      },
+      "#W9609649": {
+        "order_id": "#W9609649",
+        "user_id": "sofia_hernandez_5364",
+        "address": {
+          "address1": "652 Laurel Lane",
+          "address2": "Suite 398",
+          "city": "Seattle",
+          "country": "USA",
+          "state": "WA",
+          "zip": "98193"
+        },
+        "items": [
+          {
+            "name": "E-Reader",
+            "product_id": "3801771308",
+            "item_id": "5510402676",
+            "price": 267.07,
+            "options": {
+              "screen size": "6-inch",
+              "connectivity": "Wi-Fi",
+              "storage": "8GB"
+            }
+          },
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "9612497925",
+            "price": 50.88,
+            "options": {
+              "color": "blue",
+              "size": "M",
+              "material": "cotton",
+              "style": "crew neck"
+            }
+          },
+          {
+            "name": "T-Shirt",
+            "product_id": "9523456873",
+            "item_id": "1176194968",
+            "price": 52.88,
+            "options": {
+              "color": "black",
+              "size": "S",
+              "material": "polyester",
+              "style": "crew neck"
+            }
+          },
+          {
+            "name": "Coffee Maker",
+            "product_id": "7996920482",
+            "item_id": "9862136885",
+            "price": 258.32,
+            "options": {
+              "color": "black",
+              "capacity": "2 cups",
+              "type": "espresso",
+              "features": "timer"
+            }
+          },
+          {
+            "name": "Patio Umbrella",
+            "product_id": "9743693396",
+            "item_id": "8170914468",
+            "price": 316.29,
+            "options": {
+              "size": "6 ft",
+              "color": "red",
+              "material": "olefin",
+              "tilt mechanism": "manual tilt"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "395020036732"
+            ],
+            "item_ids": [
+              "5510402676",
+              "9612497925",
+              "1176194968",
+              "9862136885",
+              "8170914468"
+            ]
+          }
+        ],
+        "status": "processed",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 945.44,
+            "payment_method_id": "credit_card_7901829"
+          }
+        ]
+      },
+      "#W3947049": {
+        "order_id": "#W3947049",
+        "user_id": "sofia_hernandez_5364",
+        "address": {
+          "address1": "652 Laurel Lane",
+          "address2": "Suite 398",
+          "city": "Seattle",
+          "country": "USA",
+          "state": "WA",
+          "zip": "98193"
+        },
+        "items": [
+          {
+            "name": "Cycling Helmet",
+            "product_id": "7765186836",
+            "item_id": "3358616356",
+            "price": 197.33,
+            "options": {
+              "size": "S",
+              "color": "red",
+              "ventilation": "low"
+            }
+          }
+        ],
+        "fulfillments": [
+          {
+            "tracking_id": [
+              "758823963547"
+            ],
+            "item_ids": [
+              "3358616356"
+            ]
+          }
+        ],
+        "status": "delivered",
+        "payment_history": [
+          {
+            "transaction_type": "payment",
+            "amount": 197.33,
+            "payment_method_id": "credit_card_7901829"
+          }
+        ]
+      }
+    },
+    "note": "Static source extraction; this is not an agent run or trajectory. All tasks start from the full shared database."
+  }
+]
