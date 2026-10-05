@@ -21,3 +21,7 @@ No compatibility commit exists because no compatibility patch has been applied.
 ## Environment fallback
 
 `.venv-offline` exposes existing Miniforge system packages and installs the package using `--use-pep517 --no-build-isolation --no-deps -e .`. This is an explicit environment deviation, with no `setup.py` edits. It does not satisfy the unused Anthropic/Mistral provider requirements and does not claim historical dependency identity. See installation logs and `installed-packages-system-fallback.txt`.
+
+## Network-enabled installation
+
+After full network access was enabled, the original editable install succeeded in an isolated Framework Python 3.12.0 venv. No setup/dependency constraints were patched; modern resolved versions and `pip check` results are preserved. Azure expanded usage telemetry remains an identified compatibility issue for a future pilot, with no benchmark code patch yet.

@@ -19,8 +19,8 @@ Audit date: 2026-10-05. Evidence: supplied `../2406.12045v1.pdf` (arXiv v1, June
 | Reward | Binary final-state equality AND required output substrings | Paper §3; `BaseEnv.calculate_reward` | Historical evaluator unchanged | Does not independently verify all policy compliance |
 | pass^1 | Mean task success probability | Paper §3 | Historical runner mean reward | One trial per task is only a pilot estimate |
 | pass^k | Task mean `C(c,k)/C(n,k)` | Paper §3 | Not calculated yet | Aggregation code absent from initial release |
-| Python | Original exact version unknown; code requires ≥3.10 syntax | `match` in retail environment | Offline venv: Miniforge Python 3.12.11; initial Framework 3.12.0 venv install failed | Installation compatibility not tested |
-| Dependencies | Lower bounds, no exact lock | `setup.py` | Partial editable install with inherited modern packages; see frozen evidence | Full provider requirements not installed; offline fallback is not the historical environment |
+| Python | Original exact version unknown; code requires ≥3.10 syntax | `match` in retail environment | Current isolated .venv: Framework Python 3.12.0; earlier Miniforge offline fallback preserved | Installation compatibility not tested |
+| Dependencies | Lower bounds, no exact lock | `setup.py` | Full isolated editable install with modern resolved packages; see evidence/installed-packages.txt | Current lower-bound resolution satisfies requirements but is not an original historical lock |
 | Seed | Paper value unknown; code default 10 | `run.py:main` | Proposed `--seed 10 --shuffle 0` | Python RNG seed does not fix model sampling |
 
 ## Commands derived from the historical runner
@@ -56,3 +56,9 @@ The [OpenAI deprecation page](https://developers.openai.com/api/docs/deprecation
 ## Published result target
 
 The original paper's Table 2 reports GPT-4o FC retail pass^1 = 61.2%, with at least three trials per task. A five-task, one-trial pilot does not reproduce that statistic. Code reproduction, behavioral reproduction, and numerical reproduction will be reported separately. Any unavailable endpoint or substitute requires reporting before continuing, per the brief.
+
+## Verified current execution environment
+
+Network-enabled installation now succeeds: isolated `.venv`, Framework Python 3.12.0, original `pip install -e .`; package versions are in `evidence/installed-packages.txt` and `pip check` passes. This supersedes the installation-pending entries above; the modern dependency resolution is a recorded environment deviation, not an original dependency lock.
+
+Azure `gpt-4o-2` has been directly tested and returns GPT-4o-2024-11-20 with working chat and function calling. This is newer than the paper. No baseline model configuration has been selected/executed pending the owner's decision on approximate reproduction versus original-model requirements. Source benchmark files remain unchanged.

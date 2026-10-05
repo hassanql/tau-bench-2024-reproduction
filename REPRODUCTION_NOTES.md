@@ -186,3 +186,21 @@ Run from the network-enabled terminal after exporting `.env`:
 ```
 
 The actual deployed version is still unknown. GPT-4-0613 customer simulator availability remains unresolved. Do not infer exact numerical reproduction or silently use GPT-4o for both roles.
+
+## Network access fixed; deployed model verified (2026-10-05)
+
+The session permission profile changed to full filesystem/network access. The assistant directly executed the bounded Azure deployment probe. Both chat and forced function-calling checks returned HTTP 200 for deployment `gpt-4o-2`, returning **`gpt-4o-2024-11-20`**. Sanitized metadata is preserved in `evidence/azure-deployment-summary.json`. The chat used 11 input / 2 output tokens; the tool check used 61 input / 5 output tokens. The service correctly produced a diagnostic tool call; no backend action or benchmark episode ran.
+
+This is a post-paper model snapshot. Provider and snapshot differ from the historical target, and no GPT-4-0613 simulator deployment has been confirmed. Before running a substituted baseline, the owner has been asked to select a clearly labelled approximate pilot using this deployment for both roles, or to retain original-model requirements and supply another deployment/provider. No model substitution has been executed.
+
+Full isolated editable installation is being retried now that package-network access is enabled. Azure responses also include expanded usage metadata (`prompt_tokens_details`, `completion_tokens_details`, `latency_checkpoint`). The historical GPT agent blindly appends every usage field to only three initialized lists, so telemetry filtering is a necessary minimal compatibility issue to resolve before any modern-API pilot; benchmark policy, task, tools and scoring must remain unchanged.
+
+## Isolated installation succeeds with network access (2026-10-05)
+
+Original `pip install -e .` now succeeds in the dedicated `.venv` on Framework Python **3.12.0**, with `include-system-site-packages=false`. The first network-enabled attempt inherited packages from the earlier fallback configuration; that log is preserved separately (`install-network-inherited.log`). The venv was reset to isolation and installation rerun successfully (`install-network-enabled.log`). All original declared provider dependencies are installed.
+
+Resolved versions include OpenAI 3.24.0, Mistral 3.0.0, Anthropic 1.11.0, NumPy 2.5.3 and tenacity 9.1.4. Complete versions: `evidence/installed-packages.txt`. These modern versions satisfy historical lower bounds but do not reconstruct the unknown historical lock. `pip check` reports no broken requirements (`dependency-check.txt`). Historical CLI help executes with a dummy import-time key and no model request (`historical-cli-help.txt`). Original provider-specific runtime compatibility remains to be tested where used.
+
+No compatibility patch or benchmark episode has been executed. The confirmed post-paper deployment and unresolved GPT-4-0613 user endpoint still require the model-configuration decision already presented to the owner.
+
+The fork default branch is now `reproduce-tau-2024`; network-enabled repository administration succeeded, superseding the earlier branch-setting limitation. The root repository URL now opens the team reproduction README.

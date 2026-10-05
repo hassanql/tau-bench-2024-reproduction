@@ -2,7 +2,7 @@
 
 ## Status
 
-Historical source audit and offline verification complete. Owner approved the initial-release uncertainty. Reproduction remains incomplete: Azure authentication is confirmed by a user-run HTTP 200 metadata check; live execution awaits deployment names, model versions and inference verification; full isolated installation hit package-network restrictions. Five static task examples are preserved; they are not pilot trajectories.
+Historical source audit and offline verification complete. Owner approved the initial-release uncertainty. Reproduction remains incomplete: Azure authentication is confirmed by a user-run HTTP 200 metadata check; direct chat and function-calling probes now confirm deployment gpt-4o-2 returns GPT-4o-2024-11-20; live pilot awaits an explicit model-configuration decision; full isolated installation now succeeds after enabling network access. Five static task examples are preserved; they are not pilot trajectories.
 
 ## Selected commit
 
@@ -10,11 +10,11 @@ Historical source audit and offline verification complete. Owner approved the in
 
 ## Environment
 
-macOS; available Python 3.12.11. A partial offline editable installation uses a dedicated Miniforge 3.12.11 venv exposing modern system dependencies; versions and installation failures are preserved in evidence. Original setup uses editable installation with unpinned dependency lower bounds.
+macOS; available Python 3.12.11. Full isolated editable installation now succeeds in Framework Python 3.12.0 (`.venv`), with modern resolved packages frozen in evidence. Dependency checks pass. The earlier Miniforge 3.12.11 offline fallback and failed installation logs are preserved. Original setup uses editable installation with unpinned dependency lower bounds.
 
 ## Models
 
-No model calls. Proposed agent GPT-4o. Paper user GPT-4-0613; source default GPT-4 alias. Exact snapshot requests require an accounting patch. No substitution has been made. Current documented endpoint shutdown is October 23, 2026; account availability remains untested (see `PAPER_CONFIGURATION.md`).
+Two bounded diagnostic model calls succeeded; no benchmark episodes ran. Proposed agent GPT-4o. Paper user GPT-4-0613; source default GPT-4 alias. Exact snapshot requests require an accounting patch. No substitution has been made. Current documented endpoint shutdown is October 23, 2026; account availability remains untested (see `PAPER_CONFIGURATION.md`).
 
 ## Agent configuration
 
@@ -55,3 +55,5 @@ Future work may need structured user facts, source/availability annotations, sim
 ## Recommended next step
 
 Confirm actual Azure deployment names/model versions and inference access; the catalog lists the original GPT-4-0613 user model with a past retirement date. Report availability before any substitute, and complete an isolated dependency installation when package-network access permits. Choose alias versus explicit snapshot transparently before a one-task run, inspect the complete trajectory, and only then run the remaining four pilot tasks. Keep all compatibility patches separate and documented.
+
+Verified deployment: `gpt-4o-2` returns `gpt-4o-2024-11-20`; both bounded chat and tool-calling probes succeeded. Using it in a baseline would be explicitly approximate. Original GPT-4-0613 user availability remains unresolved.

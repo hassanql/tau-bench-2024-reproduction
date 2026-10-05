@@ -1,0 +1,87 @@
+Obtaining file:///Users/salih/Desktop/tau_bench/tau-bench
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: openai>=1.13.3 in ./.venv/lib/python3.12/site-packages (from tau_bench==0.1.0) (3.24.0)
+Requirement already satisfied: mistralai>=0.4.0 in ./.venv/lib/python3.12/site-packages (from tau_bench==0.1.0) (3.0.0)
+Requirement already satisfied: anthropic>=0.26.1 in ./.venv/lib/python3.12/site-packages (from tau_bench==0.1.0) (1.11.0)
+Requirement already satisfied: google-generativeai>=0.5.4 in ./.venv/lib/python3.12/site-packages (from tau_bench==0.1.0) (0.8.6)
+Requirement already satisfied: tenacity>=8.3.0 in ./.venv/lib/python3.12/site-packages (from tau_bench==0.1.0) (9.1.4)
+Requirement already satisfied: termcolor>=2.4.0 in ./.venv/lib/python3.12/site-packages (from tau_bench==0.1.0) (3.3.0)
+Collecting numpy>=1.26.4 (from tau_bench==0.1.0)
+  Downloading numpy-2.5.3-cp312-cp312-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Requirement already satisfied: anyio<5,>=4.1.0 in ./.venv/lib/python3.12/site-packages (from anthropic>=0.26.1->tau_bench==0.1.0) (4.15.1)
+Requirement already satisfied: docstring-parser<1,>=0.15 in ./.venv/lib/python3.12/site-packages (from anthropic>=0.26.1->tau_bench==0.1.0) (0.18.0)
+Requirement already satisfied: httpx2<3,>=2.0.0 in ./.venv/lib/python3.12/site-packages (from anthropic>=0.26.1->tau_bench==0.1.0) (2.13.1)
+Requirement already satisfied: jiter<1,>=0.4.0 in ./.venv/lib/python3.12/site-packages (from anthropic>=0.26.1->tau_bench==0.1.0) (0.17.0)
+Requirement already satisfied: pydantic<3,>=1.10.0 in ./.venv/lib/python3.12/site-packages (from anthropic>=0.26.1->tau_bench==0.1.0) (2.13.5)
+Requirement already satisfied: sniffio<2,>=1 in ./.venv/lib/python3.12/site-packages (from anthropic>=0.26.1->tau_bench==0.1.0) (1.3.1)
+Requirement already satisfied: typing-extensions<5,>=4.14 in ./.venv/lib/python3.12/site-packages (from anthropic>=0.26.1->tau_bench==0.1.0) (4.16.0)
+Requirement already satisfied: idna>=2.8 in ./.venv/lib/python3.12/site-packages (from anyio<5,>=4.1.0->anthropic>=0.26.1->tau_bench==0.1.0) (3.20)
+Requirement already satisfied: httpcore2==2.13.1 in ./.venv/lib/python3.12/site-packages (from httpx2<3,>=2.0.0->anthropic>=0.26.1->tau_bench==0.1.0) (2.13.1)
+Requirement already satisfied: truststore>=0.10 in ./.venv/lib/python3.12/site-packages (from httpx2<3,>=2.0.0->anthropic>=0.26.1->tau_bench==0.1.0) (0.10.4)
+Requirement already satisfied: h11>=0.16 in ./.venv/lib/python3.12/site-packages (from httpcore2==2.13.1->httpx2<3,>=2.0.0->anthropic>=0.26.1->tau_bench==0.1.0) (0.16.0)
+Requirement already satisfied: annotated-types>=0.6.0 in ./.venv/lib/python3.12/site-packages (from pydantic<3,>=1.10.0->anthropic>=0.26.1->tau_bench==0.1.0) (0.8.0)
+Requirement already satisfied: pydantic-core==2.46.5 in ./.venv/lib/python3.12/site-packages (from pydantic<3,>=1.10.0->anthropic>=0.26.1->tau_bench==0.1.0) (2.46.5)
+Requirement already satisfied: typing-inspection>=0.4.2 in ./.venv/lib/python3.12/site-packages (from pydantic<3,>=1.10.0->anthropic>=0.26.1->tau_bench==0.1.0) (0.4.4)
+Requirement already satisfied: google-ai-generativelanguage==0.6.15 in ./.venv/lib/python3.12/site-packages (from google-generativeai>=0.5.4->tau_bench==0.1.0) (0.6.15)
+Requirement already satisfied: google-api-core in ./.venv/lib/python3.12/site-packages (from google-generativeai>=0.5.4->tau_bench==0.1.0) (2.33.0)
+Requirement already satisfied: google-api-python-client in ./.venv/lib/python3.12/site-packages (from google-generativeai>=0.5.4->tau_bench==0.1.0) (2.201.0)
+Requirement already satisfied: google-auth>=2.15.0 in ./.venv/lib/python3.12/site-packages (from google-generativeai>=0.5.4->tau_bench==0.1.0) (2.59.1)
+Requirement already satisfied: protobuf in ./.venv/lib/python3.12/site-packages (from google-generativeai>=0.5.4->tau_bench==0.1.0) (5.29.6)
+Requirement already satisfied: tqdm in ./.venv/lib/python3.12/site-packages (from google-generativeai>=0.5.4->tau_bench==0.1.0) (4.70.1)
+Requirement already satisfied: proto-plus<2.0.0dev,>=1.22.3 in ./.venv/lib/python3.12/site-packages (from google-ai-generativelanguage==0.6.15->google-generativeai>=0.5.4->tau_bench==0.1.0) (1.28.2)
+Requirement already satisfied: googleapis-common-protos<2.0.0,>=1.63.2 in ./.venv/lib/python3.12/site-packages (from google-api-core->google-generativeai>=0.5.4->tau_bench==0.1.0) (1.75.0)
+Requirement already satisfied: requests<3.0.0,>=2.33.0 in ./.venv/lib/python3.12/site-packages (from google-api-core->google-generativeai>=0.5.4->tau_bench==0.1.0) (2.34.2)
+Requirement already satisfied: grpcio<2.0.0,>=1.41.0 in ./.venv/lib/python3.12/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai>=0.5.4->tau_bench==0.1.0) (1.84.0)
+Requirement already satisfied: grpcio-status<2.0.0,>=1.41.0 in ./.venv/lib/python3.12/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai>=0.5.4->tau_bench==0.1.0) (1.71.2)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in ./.venv/lib/python3.12/site-packages (from google-auth>=2.15.0->google-generativeai>=0.5.4->tau_bench==0.1.0) (0.4.2)
+Requirement already satisfied: cryptography>=38.0.3 in ./.venv/lib/python3.12/site-packages (from google-auth>=2.15.0->google-generativeai>=0.5.4->tau_bench==0.1.0) (50.0.2)
+Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.33.0->google-api-core->google-generativeai>=0.5.4->tau_bench==0.1.0)
+  Downloading charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl.metadata (46 kB)
+Collecting urllib3<3,>=1.26 (from requests<3.0.0,>=2.33.0->google-api-core->google-generativeai>=0.5.4->tau_bench==0.1.0)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests<3.0.0,>=2.33.0->google-api-core->google-generativeai>=0.5.4->tau_bench==0.1.0)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: cffi>=2.0.0 in ./.venv/lib/python3.12/site-packages (from cryptography>=38.0.3->google-auth>=2.15.0->google-generativeai>=0.5.4->tau_bench==0.1.0) (2.1.1)
+Requirement already satisfied: pycparser in ./.venv/lib/python3.12/site-packages (from cffi>=2.0.0->cryptography>=38.0.3->google-auth>=2.15.0->google-generativeai>=0.5.4->tau_bench==0.1.0) (3.0)
+Requirement already satisfied: eval-type-backport>=0.2.0 in ./.venv/lib/python3.12/site-packages (from mistralai>=0.4.0->tau_bench==0.1.0) (0.4.0)
+Requirement already satisfied: jsonpath-python>=1.0.6 in ./.venv/lib/python3.12/site-packages (from mistralai>=0.4.0->tau_bench==0.1.0) (1.1.6)
+Requirement already satisfied: opentelemetry-api<2.0.0,>=1.33.1 in ./.venv/lib/python3.12/site-packages (from mistralai>=0.4.0->tau_bench==0.1.0) (1.45.0)
+Requirement already satisfied: opentelemetry-semantic-conventions>=0.60b1 in ./.venv/lib/python3.12/site-packages (from mistralai>=0.4.0->tau_bench==0.1.0) (0.66b0)
+Collecting python-dateutil>=2.8.2 (from mistralai>=0.4.0->tau_bench==0.1.0)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Requirement already satisfied: pyasn1<0.7.0,>=0.6.1 in ./.venv/lib/python3.12/site-packages (from pyasn1-modules>=0.2.1->google-auth>=2.15.0->google-generativeai>=0.5.4->tau_bench==0.1.0) (0.6.4)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->mistralai>=0.4.0->tau_bench==0.1.0)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Requirement already satisfied: httplib2<1.0.0,>=0.19.0 in ./.venv/lib/python3.12/site-packages (from google-api-python-client->google-generativeai>=0.5.4->tau_bench==0.1.0) (0.32.0)
+Requirement already satisfied: google-auth-httplib2<1.0.0,>=0.2.0 in ./.venv/lib/python3.12/site-packages (from google-api-python-client->google-generativeai>=0.5.4->tau_bench==0.1.0) (0.4.4)
+Requirement already satisfied: uritemplate<5,>=3.0.1 in ./.venv/lib/python3.12/site-packages (from google-api-python-client->google-generativeai>=0.5.4->tau_bench==0.1.0) (4.2.0)
+Collecting pyparsing<4,>=3.1 (from httplib2<1.0.0,>=0.19.0->google-api-python-client->google-generativeai>=0.5.4->tau_bench==0.1.0)
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Downloading charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl (367 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading numpy-2.5.3-cp312-cp312-macosx_14_0_arm64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 40.3 MB/s  0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Building wheels for collected packages: tau_bench
+  Building editable for tau_bench (pyproject.toml): started
+  Building editable for tau_bench (pyproject.toml): finished with status 'done'
+  Created wheel for tau_bench: filename=tau_bench-0.1.0-0.editable-py3-none-any.whl size=5457 sha256=7eaa59019152941d0e585df2b4d909974bc9d89f680def1564d88579e6a8bb34
+  Stored in directory: /private/var/folders/gv/7pvxyb2d73d06_ctt1b1qw280000gn/T/pip-ephem-wheel-cache-ewulbq8r/wheels/d3/cd/d8/d99fbbdeb5e29822537720f29d62c63019f15b1ff86dd9daad
+Successfully built tau_bench
+Installing collected packages: urllib3, six, pyparsing, numpy, charset_normalizer, certifi, python-dateutil, tau_bench
+  Attempting uninstall: tau_bench
+    Found existing installation: tau_bench 0.1.0
+    Uninstalling tau_bench-0.1.0:
+      Successfully uninstalled tau_bench-0.1.0
+
+Successfully installed certifi-2026.7.22 charset_normalizer-3.5.2 numpy-2.5.3 pyparsing-3.3.3 python-dateutil-2.9.0.post0 six-1.17.0 tau_bench-0.1.0 urllib3-2.8.0
