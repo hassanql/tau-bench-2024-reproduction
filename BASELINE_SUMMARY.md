@@ -2,7 +2,7 @@
 
 ## Status
 
-Historical source audit and offline verification complete. Owner approved the initial-release uncertainty. Reproduction remains incomplete: live execution awaits verification of the supplied Azure resource, deployments and model versions; full isolated installation hit package-network restrictions. Five static task examples are preserved; they are not pilot trajectories.
+Historical source audit and offline verification complete. Owner approved the initial-release uncertainty. Reproduction remains incomplete: Azure authentication is confirmed by a user-run HTTP 200 metadata check; live execution awaits deployment names, model versions and inference verification; full isolated installation hit package-network restrictions. Five static task examples are preserved; they are not pilot trajectories.
 
 ## Selected commit
 
@@ -54,4 +54,4 @@ Future work may need structured user facts, source/availability annotations, sim
 
 ## Recommended next step
 
-Verify the supplied Azure resource key from a network-enabled terminal, confirm deployment names/model versions, and complete an isolated dependency installation when package-network access permits. Choose alias versus explicit snapshot transparently before a one-task run, inspect the complete trajectory, and only then run the remaining four pilot tasks. Keep all compatibility patches separate and documented.
+Confirm actual Azure deployment names/model versions and inference access; the catalog lists the original GPT-4-0613 user model with a past retirement date. Report availability before any substitute, and complete an isolated dependency installation when package-network access permits. Choose alias versus explicit snapshot transparently before a one-task run, inspect the complete trajectory, and only then run the remaining four pilot tasks. Keep all compatibility patches separate and documented.

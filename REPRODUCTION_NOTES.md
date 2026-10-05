@@ -2,7 +2,7 @@
 
 ## Goal
 
-Reproduce the original retail baseline before any Human API research modifications. This record is in progress: the source audit and offline backend/reward verification are complete; live execution awaits verification of the supplied Azure endpoint, deployment names and model versions. No pilot scores or numerical reproduction claims exist.
+Reproduce the original retail baseline before any Human API research modifications. This record is in progress: the source audit and offline backend/reward verification are complete; the Azure resource key is authenticated; live execution awaits deployment names, model versions and inference verification. No pilot scores or numerical reproduction claims exist.
 
 ## Paper and repository
 
@@ -162,3 +162,13 @@ set +a
 ```
 
 Local probe metadata is excluded from publication because it contains the account-specific endpoint; this note records the observed failure without publishing credentials or account details. Azure deployment names and model versions must be verified before making any minimal provider compatibility changes. No historical benchmark code has changed.
+
+## Azure authentication confirmed by user-run probe (2026-10-05)
+
+The user ran the diagnostic in a network-enabled terminal and received HTTP 200 for `/openai/v1/models`. The saved response was inspected in the shared workspace. This supersedes the earlier DNS-only local failure: the endpoint/key pair is valid for model metadata access. **No deployment or inference access has been verified.** Azure expects a deployment name for generation, whereas this response contains model catalog entries.
+
+Sanitized evidence (no resource endpoint or key): `evidence/azure-catalog-summary.json`. The catalog includes GPT-4o `2024-05-13`, with inference retirement date December 9, 2026, consistent with Microsoft's current Azure retirement schedule. It lists GPT-4 `0613` as deprecated with inference date June 6, 2025 (already past). Presence of that old entry does not prove that the paper's user simulator can still be deployed or called. This may block a faithful Azure-only behavioral/numerical reproduction; report before choosing any substitute.
+
+Requested next evidence: the resource's actual deployment names and underlying versions from Foundry's Deployments / Models + endpoints page. No model substitution or historical code patch has been made. The diagnostic now prints a concise relevant-model summary by default; `--full` prints the full catalog.
+
+References: [Azure endpoints and deployment names](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/endpoints), [Azure model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule).

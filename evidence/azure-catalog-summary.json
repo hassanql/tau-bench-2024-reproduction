@@ -1,0 +1,130 @@
+{
+  "kind": "sanitized catalog evidence from user-run check; not deployment or inference verification",
+  "checked_utc": "2026-10-05T07:25:40.752929+00:00",
+  "authentication_http_status": 200,
+  "source": "user ran scripts/check_azure_access.py in a network-enabled Mac terminal; local report inspected",
+  "models": [
+    {
+      "id": "gpt-4-0125-Preview",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-05-01"
+    },
+    {
+      "id": "gpt-4-1106-Preview",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-05-01"
+    },
+    {
+      "id": "gpt-4-0314",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-06-06"
+    },
+    {
+      "id": "gpt-4-0613",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-06-06"
+    },
+    {
+      "id": "gpt-4-32k-0314",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-06-06"
+    },
+    {
+      "id": "gpt-4-32k-0613",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-06-06"
+    },
+    {
+      "id": "gpt-4-vision-preview",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-05-15"
+    },
+    {
+      "id": "gpt-4-turbo-2024-04-09",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-11-14"
+    },
+    {
+      "id": "gpt-4-turbo-jp",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-03-21"
+    },
+    {
+      "id": "gpt-4o-2024-05-13",
+      "lifecycle_status": "deprecating",
+      "catalog_inference_date": "2026-12-09"
+    },
+    {
+      "id": "gpt-4o-2024-08-06",
+      "lifecycle_status": "deprecating",
+      "catalog_inference_date": "2027-04-14"
+    },
+    {
+      "id": "gpt-4o-mini-2024-07-18",
+      "lifecycle_status": "deprecating",
+      "catalog_inference_date": "2027-04-14"
+    },
+    {
+      "id": "gpt-4o-2024-11-20",
+      "lifecycle_status": "legacy",
+      "catalog_inference_date": "2027-04-14"
+    },
+    {
+      "id": "gpt-4o-audio-mai",
+      "lifecycle_status": "preview",
+      "catalog_inference_date": "2099-06-01"
+    },
+    {
+      "id": "gpt-4o-canvas-2024-09-25",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-06-01"
+    },
+    {
+      "id": "gpt-4o-audio-preview-2024-10-01",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-03-26"
+    },
+    {
+      "id": "gpt-4o-audio-preview-2024-12-17",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2026-03-24"
+    },
+    {
+      "id": "gpt-4o-audio-preview-2025-06-03",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-11-05"
+    },
+    {
+      "id": "gpt-4o-mini-audio-preview-2024-12-17",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2026-03-24"
+    },
+    {
+      "id": "gpt-4-32k",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-06-06"
+    },
+    {
+      "id": "gpt-4o-mini",
+      "lifecycle_status": "deprecating",
+      "catalog_inference_date": "2027-04-14"
+    },
+    {
+      "id": "gpt-4o-canvas",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-06-01"
+    },
+    {
+      "id": "gpt-4o-audio-preview",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2025-11-05"
+    },
+    {
+      "id": "gpt-4o-mini-audio-preview",
+      "lifecycle_status": "deprecated",
+      "catalog_inference_date": "2026-03-24"
+    }
+  ],
+  "deployment_names": "unknown",
+  "inference_verified": false
+}

@@ -2,10 +2,14 @@
 import json
 import os
 from datetime import datetime, timezone
+import argparse
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--full', action='store_true', help='Print full catalog JSON instead of a concise summary.')
+args = parser.parse_args()
 endpoint = os.environ['AZURE_OPENAI_ENDPOINT'].rstrip('/')
 key = os.environ['AZURE_OPENAI_API_KEY']
 checks = []
@@ -31,6 +35,17 @@ for row in checks:
     print('Route:', row['route'], 'HTTP status:', row['status'])
     if 'data' in row:
         data = row['data']
-        print(json.dumps(data, indent=2)[:14000])
+        if args.full:
+            print(json.dumps(data, indent=2))
+        else:
+            models = data.get('data', [])
+            print(f'Authentication succeeded. Catalog entries: {len(models)}; this does not confirm deployed models.')
+            for model in models:
+                name = model.get('id', '')
+                if name.startswith(('gpt-4-', 'gpt-4o-')) and model.get('capabilities', {}).get('chat_completion'):
+                    stamp = model.get('deprecation', {}).get('inference')
+                    date = datetime.fromtimestamp(stamp, timezone.utc).date().isoformat() if stamp else 'unknown'
+                    print(name, '|', model.get('lifecycle_status', 'unknown'), '| catalog inference date:', date)
+            print('Next: inspect deployment names and exact model versions in Foundry.')
     else:
         print(row['error'][:800])
