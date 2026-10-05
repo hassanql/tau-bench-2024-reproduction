@@ -358,4 +358,3 @@ User `sofia_hernandez_5364`. Associated order statuses: `#W3561391` = pending, `
 **Expected behavior:** Authenticate through the policy lookup, retrieve needed records, honor the instruction’s conditional preferences, and confirm consequential changes. This describes policy requirements; the evaluator does not verify all of them.
 
 **Expected final response and success criteria:** Agent speech must include every required substring: `polyester`, `cotton`. There is no gold final sentence. Terminal reward requires the full database to equal the result of replaying the listed gold actions, plus any output constraints. Gold read actions do not themselves impose a required agent read sequence.
-

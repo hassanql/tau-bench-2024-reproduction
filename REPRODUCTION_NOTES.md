@@ -145,3 +145,5 @@ Because the evaluator uses the same tools and error handling to construct its ta
 ## GitHub sharing
 
 User requested uploading the reproduction to GitHub for team review. Created `hassanql/tau-bench-2024-reproduction` as a fork of the original repository, preserving upstream history/license. The reproduction branch is `reproduce-tau-2024`; `team` is its local remote, while `origin` still refers to Sierra's upstream. No collaborator invitations or messages have been sent. The README is a new documentation landing page; no historical benchmark code is changed. Live results are explicitly pending.
+
+Published audit commit: `66a032f` on `reproduce-tau-2024`. Team entry point: https://github.com/hassanql/tau-bench-2024-reproduction/tree/reproduce-tau-2024 . The fork default branch remains upstream `main`: changing repository settings through the local CLI hit a network restriction. Share the reproduction branch URL.
