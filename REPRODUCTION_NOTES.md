@@ -2,7 +2,7 @@
 
 ## Goal
 
-Reproduce the original retail baseline before any Human API research modifications. This record is in progress: the source audit and offline backend/reward verification are complete; live execution awaits an OpenAI API key. No pilot scores or numerical reproduction claims exist.
+Reproduce the original retail baseline before any Human API research modifications. This record is in progress: the source audit and offline backend/reward verification are complete; live execution awaits verification of the supplied Azure endpoint, deployment names and model versions. No pilot scores or numerical reproduction claims exist.
 
 ## Paper and repository
 
@@ -102,7 +102,7 @@ No benchmark code patches. `.gitignore`, audit/verification helpers, evidence an
 
 ## API/model substitutions
 
-None. GitHub cloning and forking used existing authentication without copying credentials. Only environment-variable names were inspected in candidate project files; no values were printed or copied. No OpenAI key was found. A request to configure the key locally is pending. Environment files are ignored. Account access to historical model endpoints remains unverified.
+None. GitHub cloning and forking used existing authentication without copying credentials. Only environment-variable names were inspected in candidate project files; no values were printed or copied. Initially no OpenAI key was found. The user subsequently supplied an Azure OpenAI endpoint and resource key. The key is held only in Git-ignored `.env` (mode 0600); no key value is included in committed files. Environment files are ignored. Account access to historical model endpoints remains unverified.
 
 ## Small pilot runs
 
@@ -147,3 +147,18 @@ Because the evaluator uses the same tools and error handling to construct its ta
 User requested uploading the reproduction to GitHub for team review. Created `hassanql/tau-bench-2024-reproduction` as a fork of the original repository, preserving upstream history/license. The reproduction branch is `reproduce-tau-2024`; `team` is its local remote, while `origin` still refers to Sierra's upstream. No collaborator invitations or messages have been sent. The README is a new documentation landing page; no historical benchmark code is changed. Live results are explicitly pending.
 
 Published audit commit: `66a032f` on `reproduce-tau-2024`. Team entry point: https://github.com/hassanql/tau-bench-2024-reproduction/tree/reproduce-tau-2024 . The fork default branch remains upstream `main`: changing repository settings through the local CLI hit a network restriction. Share the reproduction branch URL.
+
+## Azure credential check (2026-10-05)
+
+The user supplied an Azure OpenAI resource endpoint and key and requested verification. A read-only metadata probe against `/openai/v1/models` and `/openai/models?api-version=2024-10-21` failed on local DNS resolution before any HTTP authentication response. Credential validity, deployed models and exact versions therefore remain **unverified**. No model generation or live pilot ran, and no substitute was selected.
+
+`scripts/check_azure_access.py` is a reusable read-only probe. It reads exported `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_API_KEY`, never prints the key, and saves metadata/errors under `evidence/azure-access-check.json`. Run from a network-enabled terminal:
+
+```bash
+set -a
+source .env
+set +a
+.venv-offline/bin/python scripts/check_azure_access.py
+```
+
+Local probe metadata is excluded from publication because it contains the account-specific endpoint; this note records the observed failure without publishing credentials or account details. Azure deployment names and model versions must be verified before making any minimal provider compatibility changes. No historical benchmark code has changed.

@@ -9,3 +9,6 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+
+# Account-specific local endpoint probe metadata.
+evidence/azure-access-check.json
